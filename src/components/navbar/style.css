@@ -1,0 +1,23 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  padding: 6px;
+}
+
+.headerButton {
+  padding: 10px;
+  background-color: #0d2b46;
+  color: white;
+  border-radius: 3px;
+  transition: 0.5s;
+}
+.headerButton:hover {
+  cursor: pointer;
+  background-color: #367086;
+}
+
+.highlighted {
+  background-color: #367086;
+}

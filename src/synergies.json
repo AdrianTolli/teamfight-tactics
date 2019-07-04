@@ -1,0 +1,100 @@
+{
+  "synergies": [
+    {
+      "classes": [
+        {
+          "Assassin": {
+            "3": "+150% critical strike damage",
+            "6": "+350% critical strike damage"
+          },
+          "Blademaster": {
+            "3": "One additional strike",
+            "6": "Two additional strike"
+          },
+          "Brawler": {
+            "2": "+300 health",
+            "4": "+700 health"
+          },
+          "Elementalist": {
+            "3": "Summon a golem at the start of the turn"
+          },
+          "Guardian": {
+            "2": "At the start of combat, give adjacent allies +40 armor"
+          },
+          "Gunslinger": {
+            "2": "Chance to attack another random enemy",
+            "4": "Chance to attack all other enemies"
+          },
+          "Knight": {
+            "2": "Blocks 20 damage",
+            "4": "Blocks 40 damage",
+            "6": "Blocks 80 damage"
+          },
+          "Ranger": {
+            "2": "25% chance to double attackspeed for 3s",
+            "4": "65% chance to double attackspeed for 3s"
+          },
+          "Shapeshifter": {
+            "3": "+100% max health"
+          },
+          "Sorcerer": {
+            "3": "+35% spell damage",
+            "6": "+100% spell damage"
+          }
+        }
+      ],
+      "Origins": [
+        {
+          "Demon": {
+            "2": "40% chance to burn all mana on hit",
+            "4": "60% chance to burn all mana on hit",
+            "6": "80% chance to burn all mana on hit"
+          },
+          "Dragon": {
+            "2": "Dragons are immune to magic damage"
+          },
+          "Exile": {
+            "1": "Gain 100% of health as shield if not adjacent to anny allies at the start of the turn"
+          },
+          "Glacial": {
+            "2": "20%  chance to freeze enemy on hit",
+            "4": "30%  chance to freeze enemy on hit",
+            "6": "45%  chance to freeze enemy on hit"
+          },
+          "Imerial": {
+            "2": "1 random imperial gain double damage",
+            "4": "All imperials gain double damage"
+          },
+          "Noble": {
+            "3": "A random ally gain 100 health and heal 35 health on hit",
+            "6": "All allies gain 100 health and heal 35 health on hit"
+          },
+          "Ninja": {
+            "1": "1 Ninja only: Gain +40% attack damage",
+            "4": "All Ninjas gain +40% attack damage"
+          },
+          "Pirate": {
+            "3": "Gain a pirate chest at the end of turn, containing 0-4 gold"
+          },
+          "Phantom": {
+            "2": "At the start of turn set a random enemies health to 100"
+          },
+          "Robot": {
+            "1": "Robots start the turn with 100% mana"
+          },
+          "Void": {
+            "3": "All allies ignore 50% of enemy armor"
+          },
+          "Wild": {
+            "2": "Wild allies gain furystacks on hits (max 5), 1 stack increases attack speed by 7%",
+            "4": "All allies gain furystacks on hits (max 5), 1 stack increases attack speed by 7%"
+          },
+          "Yordle": {
+            "3": "Yordle's have 20% chance to dodge attacks",
+            "6": "Yordle's have 50% chance to dodge attacks"
+          }
+        }
+      ]
+    }
+  ]
+}

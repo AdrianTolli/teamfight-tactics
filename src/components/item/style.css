@@ -1,0 +1,34 @@
+.allItemContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.itemCard {
+  width: 23%;
+  height: 450px;
+  padding: 6px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: rgba(13, 43, 70, 0.5);
+}
+
+.comboContainer {
+  padding: 6px;
+  display: flex;
+}
+
+.highlight {
+  background-color: rgba(11, 26, 33, 0.7);
+}
+
+img {
+  height: 24px;
+  width: 24px;
+}

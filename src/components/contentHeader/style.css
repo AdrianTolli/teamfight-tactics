@@ -1,0 +1,9 @@
+.contentHeader {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(11, 26, 33, 0.9);
+  flex-direction: row;
+  padding: 6px;
+}
+
+/*Flex size is taken from champion style.css*/
