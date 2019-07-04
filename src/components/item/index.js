@@ -12,8 +12,6 @@ class Item extends Component {
   findItem(name) {
     for (var i = 0; i < this.props.fullData.items.length; i++) {
       if (name === this.props.fullData.items[i].name) {
-        console.log("Found:");
-        console.log(this.props.fullData.items[i].img);
         return <img src={this.props.fullData.items[i].img} />;
       }
     }

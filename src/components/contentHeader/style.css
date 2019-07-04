@@ -6,4 +6,12 @@
   padding: 6px;
 }
 
+.spanname:hover,
+.spancost:hover,
+.spanhealth:hover,
+.spanclass:hover,
+.spanorigin:hover {
+  cursor: pointer;
+}
+
 /*Flex size is taken from champion style.css*/

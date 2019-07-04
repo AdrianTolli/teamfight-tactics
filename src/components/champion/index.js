@@ -16,7 +16,6 @@ class Champion extends Component {
     var class1 = "";
     var class2 = "";
     var class3 = null;
-    console.log(this.props.data.name);
     for (var i = 0; i < this.props.data.classes.length; i++) {
       i === 0
         ? (class1 = this.props.data.classes[i])
@@ -24,9 +23,6 @@ class Champion extends Component {
         ? (class2 = this.props.data.classes[i])
         : (class3 = this.props.data.classes[i]);
     }
-    console.log(
-      " class1: " + class1 + " class2: " + class2 + " class3: " + class3
-    );
     var finalClasses = "";
     class3 === null
       ? (finalClasses = class1 + "/" + class2)

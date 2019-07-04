@@ -21,6 +21,11 @@ class App extends Component {
     this.champClicked = this.champClicked.bind(this);
     this.itemClicked = this.itemClicked.bind(this);
     this.tbClicked = this.tbClicked.bind(this);
+    this.sortByName = this.sortByName.bind(this);
+    this.sortByCost = this.sortByCost.bind(this);
+    this.sortByHealth = this.sortByHealth.bind(this);
+    this.sortByClass = this.sortByClass.bind(this);
+    this.sortByOrigin = this.sortByOrigin.bind(this);
   }
 
   componentDidMount() {
@@ -95,6 +100,91 @@ class App extends Component {
     });
   }
 
+  sortByName() {
+    var newData = this.state.champData.champions.sort(function compare(a, b) {
+      if (a.name < b.name) {
+        return -1;
+      }
+      if (a.name > b.name) {
+        return 1;
+      }
+    });
+    this.setState({
+      champData: {
+        champions: newData,
+        spriteURL: this.state.champData.spriteURL
+      }
+    });
+  }
+  sortByCost() {
+    var newData = this.state.champData.champions.sort(function compare(a, b) {
+      if (a.cost < b.cost) {
+        return -1;
+      }
+      if (a.cost > b.cost) {
+        return 1;
+      }
+    });
+    this.setState({
+      champData: {
+        champions: newData,
+        spriteURL: this.state.champData.spriteURL
+      }
+    });
+  }
+  sortByHealth() {
+    var newData = this.state.champData.champions.sort(function compare(a, b) {
+      if (a.health < b.health) {
+        return -1;
+      }
+      if (a.health > b.health) {
+        return 1;
+      }
+    });
+    this.setState({
+      champData: {
+        champions: newData.reverse(),
+        spriteURL: this.state.champData.spriteURL
+      }
+    });
+  }
+  sortByClass() {
+    var newData = this.state.champData.champions.sort(function compare(a, b) {
+      if (a.classes[0] < b.classes[0]) {
+        return -1;
+      }
+      if (a.classes[0] > b.classes[0]) {
+        return 1;
+      }
+    });
+    this.setState({
+      champData: {
+        champions: newData,
+        spriteURL: this.state.champData.spriteURL
+      }
+    });
+  }
+  sortByOrigin() {
+    var newData = this.state.champData.champions.sort(function compare(a, b) {
+      if (a.classes[1] < b.classes[1]) {
+        return -1;
+      }
+      if (a.classes.length === 3) {
+        if (a.classes[2] > b.classes[2]) {
+          return 1;
+        }
+      } else if (a.classes[1] > b.classes[1]) {
+        return 1;
+      }
+    });
+    this.setState({
+      champData: {
+        champions: newData,
+        spriteURL: this.state.champData.spriteURL
+      }
+    });
+  }
+
   render() {
     return (
       <div className="height100 fullContainer">
@@ -104,26 +194,36 @@ class App extends Component {
           tbClicked={this.tbClicked}
           displayedContent={this.state.displayedContent}
         />
-        <div className="displayContainer">
-          {this.state.displayedContent === "champions" ? (
-            <ContentHeader />
-          ) : null}
-          {this.state.displayedContent === "champions" ? (
-            this.renderChampions()
-          ) : this.state.displayedContent === "items" ? (
-            this.renderItems()
-          ) : this.state.displayedContent === "teambuilder" ? (
-            <Teambuilder
-              champData={this.state.champData}
-              synergyData={this.state.synergyData}
+        {this.state.displayedContent === "champions" ? (
+          <span>
+            Unfortunatly sort by Origin does not work as intended, due to 2
+            classes on some champions
+          </span>
+        ) : null}
+        {this.state.displayedContent === "champions" ? (
+          <div className="displayChampContainer">
+            <ContentHeader
+              sortByName={this.sortByName}
+              sortByCost={this.sortByCost}
+              sortByHealth={this.sortByHealth}
+              sortByClass={this.sortByClass}
+              sortByOrigin={this.sortByOrigin}
             />
-          ) : (
-            <span>
-              Click on either champions to see pieces available, items to see
-              all items and their combinations, or try out the teambuilder!
-            </span>
-          )}
-        </div>
+            {this.renderChampions()}
+          </div>
+        ) : this.state.displayedContent === "items" ? (
+          <div className="displayItemContainer">{this.renderItems()}</div>
+        ) : this.state.displayedContent === "teambuilder" ? (
+          <Teambuilder
+            champData={this.state.champData}
+            synergyData={this.state.synergyData}
+          />
+        ) : (
+          <span>
+            Click on either champions to see pieces available, items to see all
+            items and their combinations, or try out the teambuilder!
+          </span>
+        )}
       </div>
     );
   }
