@@ -4,37 +4,90 @@ import "./style.css";
 class Item extends Component {
   constructor() {
     super();
+    this.state = {
+      spriteURL: "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/"
+    };
 
     this.renderCombinations = this.renderCombinations.bind(this);
-    this.findItem = this.findItem.bind(this);
+    this.findBonus = this.findBonus.bind(this);
+    this.findCombination = this.findCombination.bind(this);
   }
 
-  findItem(name) {
-    for (var i = 0; i < this.props.fullData.items.length; i++) {
-      if (name === this.props.fullData.items[i].name) {
-        return <img src={this.props.fullData.items[i].img} />;
+  findBonus(name) {
+    for (var i = 0; i < this.props.fullData.length; i++) {
+      if (name === this.props.fullData[i].key) {
+        console.log(
+          "found:",
+          this.props.fullData[i].key,
+          ":",
+          this.props.fullData[i].bonus
+        );
+        return this.props.fullData[i].bonus;
       }
     }
   }
-
+  findCombination(name, comboItem) {
+    for (var i = 8; i < this.props.fullData.length; i++) {
+      if (
+        (name === this.props.fullData[i].buildsFrom[0] &&
+          comboItem === this.props.fullData[i].buildsFrom[1]) ||
+        (comboItem === this.props.fullData[i].buildsFrom[0] &&
+          name === this.props.fullData[i].buildsFrom[1])
+      ) {
+        return this.props.fullData[i].key;
+      }
+    }
+  }
   renderCombinations() {
     var itemCombination = [];
-    for (var i = 0; i < this.props.data.combinations.length; i++) {
+    for (var i = 0; i < this.props.data.buildsInto.length; i++) {
       i % 2 === 0
         ? itemCombination.push(
             <div className="comboContainer">
-              {this.findItem(this.props.data.combinations[i].name)}{" "}
+              <img
+                src={this.state.spriteURL + this.props.fullData[i].key + ".png"}
+              />
               <span>→</span>
-              <img src={this.props.data.combinations[i].comboImg} />{" "}
-              <span>{this.props.data.combinations[i].stat}</span>
+              <img
+                src={
+                  this.state.spriteURL +
+                  this.findCombination(
+                    this.props.data.key,
+                    this.props.fullData[i].key
+                  ) +
+                  ".png"
+                }
+              />
+              {this.findBonus(
+                this.findCombination(
+                  this.props.data.key,
+                  this.props.fullData[i].key
+                )
+              )}
             </div>
           )
         : itemCombination.push(
             <div className="comboContainer highlight">
-              {this.findItem(this.props.data.combinations[i].name)}{" "}
+              <img
+                src={this.state.spriteURL + this.props.fullData[i].key + ".png"}
+              />{" "}
               <span>→</span>
-              <img src={this.props.data.combinations[i].comboImg} />{" "}
-              <span>{this.props.data.combinations[i].stat}</span>
+              <img
+                src={
+                  this.state.spriteURL +
+                  this.findCombination(
+                    this.props.data.key,
+                    this.props.fullData[i].key
+                  ) +
+                  ".png"
+                }
+              />
+              {this.findBonus(
+                this.findCombination(
+                  this.props.data.key,
+                  this.props.fullData[i].key
+                )
+              )}
             </div>
           );
     }
@@ -45,7 +98,7 @@ class Item extends Component {
     return (
       <div className="itemCard">
         <div className="highlight">
-          <img src={this.props.data.img} />
+          <img src={this.state.spriteURL + this.props.data.key + ".png"} />
           {this.props.data.name}
         </div>
         {this.renderCombinations()}

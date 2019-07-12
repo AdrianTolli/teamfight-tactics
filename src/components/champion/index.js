@@ -8,25 +8,18 @@ class Champion extends Component {
       filteredChamps: null
     };
 
-    this.renderClasses = this.renderClasses.bind(this);
+    this.renderClass = this.renderClass.bind(this);
     this.filterChamps = this.filterChamps.bind(this);
   }
 
-  renderClasses() {
+  renderClass() {
     var class1 = "";
     var class2 = "";
-    var class3 = null;
-    for (var i = 0; i < this.props.data.classes.length; i++) {
-      i === 0
-        ? (class1 = this.props.data.classes[i])
-        : i === 1
-        ? (class2 = this.props.data.classes[i])
-        : (class3 = this.props.data.classes[i]);
-    }
     var finalClasses = "";
-    class3 === null
-      ? (finalClasses = class1 + "/" + class2)
-      : (finalClasses = class1 + "/" + class2 + "/" + class3);
+    if (this.props.data.class.length === 1) {
+      finalClasses = this.props.data.class[0];
+    } else
+      finalClasses = this.props.data.class[0] + ", " + this.props.data.class[1];
 
     return finalClasses;
   }
@@ -38,23 +31,25 @@ class Champion extends Component {
       <div className={this.props.classname}>
         <div className="name">
           <img
-            src={this.props.imgURL + this.props.data.img}
+            src={this.props.imgURL + this.props.data.key + ".png"}
             className="champSprite"
           />
           {this.props.data.name}
         </div>
-        <div className="classes">{this.renderClasses()}</div>
+        <div className="classes">
+          {this.renderClass()} <span>/</span> {this.props.data.origin}
+        </div>
         <div className="cost">{this.props.data.cost}</div>
-        <div className="health">{this.props.data.health}</div>
+        <div className="health">{this.props.data.stats.defense.health}</div>
         <div className="armor">
-          {this.props.data.armor}
+          {this.props.data.stats.defense.armor}
           <span>/</span>
-          {this.props.data.magicResist}
+          {this.props.data.stats.defense.magicResist}
         </div>
         <div className="attackspeed">
-          {this.props.data.attackSpeed}
+          {this.props.data.stats.offense.attackSpeed}
           <span>/</span>
-          {this.props.data.range}
+          {this.props.data.stats.offense.range}
         </div>
       </div>
     );

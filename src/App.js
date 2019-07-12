@@ -10,10 +10,13 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      displayedContent: "champions",
-      champData: null,
+      displayedContent: null,
+      championData: null,
       itemData: null,
-      synergyData: null
+      originData: null,
+      classData: null,
+      spriteURL: "https://ddragon.leagueoflegends.com/cdn/9.12.1/img/champion/",
+      sortedBy: "name"
     };
 
     this.renderChampions = this.renderChampions.bind(this);
@@ -29,38 +32,46 @@ class App extends Component {
   }
 
   componentDidMount() {
-    const champData = require("./pieces.json");
+    const championData = require("./champions.json");
+    var championObject = Object.keys(championData).map(
+      key => championData[key]
+    );
     this.setState({
-      champData: champData
+      championData: championObject
     });
 
     const itemData = require("./items.json");
+    var itemObject = Object.keys(itemData).map(key => itemData[key]);
     this.setState({
-      itemData: itemData
+      itemData: itemObject
     });
 
-    const synergyData = require("./synergies.json");
+    const originData = require("./origins.json");
     this.setState({
-      synergyData: synergyData
+      originData: originData
+    });
+    const classData = require("./classes.json");
+    this.setState({
+      classData: classData
     });
   }
 
   renderChampions() {
     var championCards = [];
-    if (this.state.champData != null) {
-      for (var i = 0; i < this.state.champData.champions.length; i++) {
+    if (this.state.championData != null) {
+      for (var i = 0; i < this.state.championData.length; i++) {
         i % 2 === 0
           ? championCards.push(
               <Champion
-                imgURL={this.state.champData.spriteURL}
-                data={this.state.champData.champions[i]}
+                imgURL={this.state.spriteURL}
+                data={this.state.championData[i]}
                 classname="championCard"
               />
             )
           : championCards.push(
               <Champion
-                imgURL={this.state.champData.spriteURL}
-                data={this.state.champData.champions[i]}
+                imgURL={this.state.spriteURL}
+                data={this.state.championData[i]}
                 classname="championCard highlight"
               />
             );
@@ -72,12 +83,9 @@ class App extends Component {
   renderItems() {
     var itemCards = [];
     if (this.state.itemData != null) {
-      for (var i = 0; i < this.state.itemData.items.length; i++) {
+      for (var i = 0; i < 8; i++) {
         itemCards.push(
-          <Item
-            data={this.state.itemData.items[i]}
-            fullData={this.state.itemData}
-          />
+          <Item data={this.state.itemData[i]} fullData={this.state.itemData} />
         );
       }
     }
@@ -101,7 +109,7 @@ class App extends Component {
   }
 
   sortByName() {
-    var newData = this.state.champData.champions.sort(function compare(a, b) {
+    var newData = this.state.championData.sort(function compare(a, b) {
       if (a.name < b.name) {
         return -1;
       }
@@ -109,15 +117,20 @@ class App extends Component {
         return 1;
       }
     });
-    this.setState({
-      champData: {
-        champions: newData,
-        spriteURL: this.state.champData.spriteURL
-      }
-    });
+    if (this.state.sortedBy != "name") {
+      this.setState({
+        championData: newData,
+        sortedBy: "name"
+      });
+    } else {
+      this.setState({
+        championData: newData.reverse(),
+        sortedBy: "nameReversed"
+      });
+    }
   }
   sortByCost() {
-    var newData = this.state.champData.champions.sort(function compare(a, b) {
+    var newData = this.state.championData.sort(function compare(a, b) {
       if (a.cost < b.cost) {
         return -1;
       }
@@ -125,64 +138,80 @@ class App extends Component {
         return 1;
       }
     });
-    this.setState({
-      champData: {
-        champions: newData,
-        spriteURL: this.state.champData.spriteURL
-      }
-    });
+    if (this.state.sortedBy != "cost") {
+      this.setState({
+        championData: newData,
+        sortedBy: "cost"
+      });
+    } else {
+      this.setState({
+        championData: newData.reverse(),
+        sortedBy: "costReversed"
+      });
+    }
   }
   sortByHealth() {
-    var newData = this.state.champData.champions.sort(function compare(a, b) {
-      if (a.health < b.health) {
+    var newData = this.state.championData.sort(function compare(a, b) {
+      if (a.stats.defense.health < b.stats.defense.health) {
         return -1;
       }
-      if (a.health > b.health) {
+      if (a.stats.defense.health > b.stats.defense.health) {
         return 1;
       }
     });
-    this.setState({
-      champData: {
-        champions: newData.reverse(),
-        spriteURL: this.state.champData.spriteURL
-      }
-    });
+    if (this.state.sortedBy != "health") {
+      this.setState({
+        championData: newData.reverse(),
+        sortedBy: "health"
+      });
+    } else {
+      this.setState({
+        championData: newData,
+        sortedBy: "healthReversed"
+      });
+    }
   }
   sortByClass() {
-    var newData = this.state.champData.champions.sort(function compare(a, b) {
-      if (a.classes[0] < b.classes[0]) {
+    var newData = this.state.championData.sort(function compare(a, b) {
+      if (a.class[0] < b.class[0]) {
         return -1;
       }
-      if (a.classes[0] > b.classes[0]) {
+      if (a.class[0] > b.class[0]) {
         return 1;
       }
     });
-    this.setState({
-      champData: {
-        champions: newData,
-        spriteURL: this.state.champData.spriteURL
-      }
-    });
+    if (this.state.sortedBy != "class") {
+      this.setState({
+        championData: newData,
+        sortedBy: "class"
+      });
+    } else {
+      this.setState({
+        championData: newData.reverse(),
+        sortedBy: "classReversed"
+      });
+    }
   }
   sortByOrigin() {
-    var newData = this.state.champData.champions.sort(function compare(a, b) {
-      if (a.classes[1] < b.classes[1]) {
+    var newData = this.state.championData.sort(function compare(a, b) {
+      if (a.origin[0] < b.origin[0]) {
         return -1;
       }
-      if (a.classes.length === 3) {
-        if (a.classes[2] > b.classes[2]) {
-          return 1;
-        }
-      } else if (a.classes[1] > b.classes[1]) {
+      if (a.origin[0] > b.origin[0]) {
         return 1;
       }
     });
-    this.setState({
-      champData: {
-        champions: newData,
-        spriteURL: this.state.champData.spriteURL
-      }
-    });
+    if (this.state.sortedBy != "origin") {
+      this.setState({
+        championData: newData,
+        sortedBy: "origin"
+      });
+    } else {
+      this.setState({
+        championData: newData.reverse(),
+        sortedBy: "originReversed"
+      });
+    }
   }
 
   render() {
@@ -194,12 +223,6 @@ class App extends Component {
           tbClicked={this.tbClicked}
           displayedContent={this.state.displayedContent}
         />
-        {this.state.displayedContent === "champions" ? (
-          <span>
-            Unfortunatly sort by Origin does not work as intended, due to 2
-            classes on some champions
-          </span>
-        ) : null}
         {this.state.displayedContent === "champions" ? (
           <div className="displayChampContainer">
             <ContentHeader

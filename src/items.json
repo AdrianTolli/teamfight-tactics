@@ -1,444 +1,614 @@
 {
-  "items": [
-    {
-      "name": "B.F Sword",
-      "stat": "+20 attack damage",
-      "combinations": [
-        {
-          "name": "B.F Sword",
-          "combo": "Infinity Edge",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/infinityedge.png",
-          "stat": "Critical strike deal +100% damage"
-        },
-        {
-          "name": "Needlessly Large Rod",
-          "combo": "Hextech Gunblade",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/hextechgunblade.png",
-          "stat": "Heal for 25% of all damage dealt"
-        },
-        {
-          "name": "Recurve Bow",
-          "combo": "Sword Of The Divine",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/swordofthedivine.png",
-          "stat": "Every 1s gain 5% chance to gain 100% critical strike"
-        },
-        {
-          "name": "Giant's belt",
-          "combo": "Zeke's Herald",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/zekesherald.png",
-          "stat": "Adjacant allies gain 10% attack speed"
-        },
-        {
-          "name": "Chain west",
-          "combo": "Guardians Angel",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/guardianangel.png",
-          "stat": "Revives the wearer with 500 HP upon death"
-        },
-        {
-          "name": "Negatron cloak",
-          "combo": "Bloodthirster",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/bloodthirster.png",
-          "stat": "Attacks heal for 50% of dagame"
-        },
-        {
-          "name": "Tear of the goddess",
-          "combo": "Spear of Shojin",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/spearofshojin.png",
-          "stat": "After casting, gain 15% of max mana per attack"
-        },
-        {
-          "name": "Spatula",
-          "combo": "Youmuu's Ghostblade",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/youmuusghostblade.png",
-          "stat": "Wearer is also an Assassin"
-        }
-      ],
-      "img": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/bfsword.png"
-    },
-    {
-      "name": "Needlessly Large Rod",
-      "stat": "+20% Spell damage",
-      "combinations": [
-        {
-          "name": "B.F Sword",
-          "combo": "Hextech Gunblade",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/hextechgunblade.png",
-          "stat": "Heal for 25% of all damage dealt"
-        },
-        {
-          "name": "Needlessly Large Rod",
-          "combo": "Rabadons Deathcap",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/rabadonsdeathcap.png",
-          "stat": "Wearer's ability deal 50% increased damage"
-        },
-        {
-          "name": "Recurve Bow",
-          "combo": "Guinsoo's Rageblade",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/guinsoosrageblade.png",
-          "stat": "Attacks give 3% attack speed. Stacks infinitely"
-        },
-        {
-          "name": "Giant's belt",
-          "combo": "Morellonomicon",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/morellonomicon.png",
-          "stat": "Spells burn 2.5% of the enemy max HP per second"
-        },
-        {
-          "name": "Chain west",
-          "combo": "Locket of the Iron Solaris",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/locketoftheironsolari.png",
-          "stat": "On start of combat, adjacent allies get 200 shield."
-        },
-        {
-          "name": "Negatron cloak",
-          "combo": "Ionic Spark",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/ionicspark.png",
-          "stat": "Whenever an enemy casts a spell they take 200 damage"
-        },
-        {
-          "name": "Tear of the goddess",
-          "combo": "Ludens Echo",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/ludensecho.png",
-          "stat": "Deal 200 splash damage on ability hit"
-        },
-        {
-          "name": "Spatula",
-          "combo": "Yuumi",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/yuumi.png",
-          "stat": "Wearer is also a Sorcerer"
-        }
-      ],
-      "img": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/needlesslylargerod.png"
-    },
-    {
-      "name": "Recurve Bow",
-      "stat": "+15% Attack Speed",
-      "combinations": [
-        {
-          "name": "B.F Sword",
-          "combo": "Sword of the divine",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/swordofthedivine.png",
-          "stat": "Every 1s gain 5% chance to get 100% chritical chance"
-        },
-        {
-          "name": "Needlessly Large Rod",
-          "combo": "Guinsoo's Rageblade",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/guinsoosrageblade.png",
-          "stat": "Attacks give 3% attack speed. Stacks infinitely"
-        },
-        {
-          "name": "Recurve Bow",
-          "combo": "Rapid Firecannon",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/rapidfirecannon.png",
-          "stat": "Attacks cannot be dodged. Attack range is doubled"
-        },
-        {
-          "name": "Giant's belt",
-          "combo": "Titanic Hydra",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/titanichydra.png",
-          "stat": "Attacks deal 10% of wearer's max hp as cleave damage"
-        },
-        {
-          "name": "Chain west",
-          "combo": "Phantomdancer",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/phantomdancer.png",
-          "stat": "Wearer dodges all critical strikes"
-        },
-        {
-          "name": "Negatron cloak",
-          "combo": "Cursed blade",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/cursedblade.png",
-          "stat": "Attacks have a low chance to shrink(-1 star lvl)"
-        },
-        {
-          "name": "Tear of the goddess",
-          "combo": "Statikk shiv",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/statikkshiv.png",
-          "stat": "Every 3rd attack deals 100 splash magic damage"
-        },
-        {
-          "name": "Spatula",
-          "combo": "Blade of the ruined king",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/bladeoftheruinedking.png",
-          "stat": "Wearer is also a Blademaster"
-        }
-      ],
-      "img": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/recurvebow.png"
-    },
-    {
-      "name": "Giant's belt",
-      "stat": "+200 health",
-      "combinations": [
-        {
-          "name": "B.F Sword",
-          "combo": "Zeke's Herald",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/zekesherald.png",
-          "stat": "Adjacant allies gain 10% attack speed"
-        },
-        {
-          "name": "Needlessly Large Rod",
-          "combo": "Morellonomicon",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/morellonomicon.png",
-          "stat": "Spells burn 2.5% of the enemy max HP per second"
-        },
-        {
-          "name": "Recurve Bow",
-          "combo": "Titanic Hydra",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/titanichydra.png",
-          "stat": "Attacks deal 10% of wearer's max hp as cleave damage"
-        },
-        {
-          "name": "Giant's belt",
-          "combo": "Warmog's Armor",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/warmogsarmor.png",
-          "stat": "Regen 3% of max health per second"
-        },
-        {
-          "name": "Chain west",
-          "combo": "Red buff",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/redbuff.png",
-          "stat": "Attacks burn 2.5% of targets max health and disable healing"
-        },
-        {
-          "name": "Negatron cloak",
-          "combo": "Zephyr",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/zephyr.png",
-          "stat": "Banish an enemy for 5s on start of combat"
-        },
-        {
-          "name": "Tear of the goddess",
-          "combo": "Redemption",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/redemption.png",
-          "stat": "On death heals nearby allies for 1000 HP after a short delay"
-        },
-        {
-          "name": "Spatula",
-          "combo": "Frozen Mallet",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/frozenmallet.png",
-          "stat": "Wearer is also an Glacial"
-        }
-      ],
-      "img": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/giantsbelt.png"
-    },
-    {
-      "name": "Chain west",
-      "stat": "+20 armor",
-      "combinations": [
-        {
-          "name": "B.F Sword",
-          "combo": "Guardians Angel",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/guardianangel.png",
-          "stat": "Revives the wearer with 500 HP upon death"
-        },
-        {
-          "name": "Needlessly Large Rod",
-          "combo": "Locket of the Iron Solaris",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/locketoftheironsolari.png",
-          "stat": "On start of combat, adjacent allies get 200 shield."
-        },
-        {
-          "name": "Recurve Bow",
-          "combo": "Phantomdancer",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/phantomdancer.png",
-          "stat": "Wearer dodges all critical strikes"
-        },
-        {
-          "name": "Giant's belt",
-          "combo": "Red buff",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/redbuff.png",
-          "stat": "Attacks burn 2.5% of targets max health and disable healing"
-        },
-        {
-          "name": "Chain west",
-          "combo": "Thorn mail",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/thornmail.png",
-          "stat": "Refelct 50% of damage taken from attacks"
-        },
-        {
-          "name": "Negatron cloak",
-          "combo": "Swordbreaker",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/swordbreaker.png",
-          "stat": "Attacks have a chance to disarm"
-        },
-        {
-          "name": "Tear of the goddess",
-          "combo": "Frozen heart",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/frozenheart.png",
-          "stat": "Adjacent enemies lose 20% Attack Speed"
-        },
-        {
-          "name": "Spatula",
-          "combo": "Knight's vow",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/knightsvow.png",
-          "stat": "Wearer is also an Assassin"
-        }
-      ],
-      "img": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/chainvest.png"
-    },
-    {
-      "name": "Negatron cloak",
-      "stat": "+20 magic resist",
-      "combinations": [
-        {
-          "name": "B.F Sword",
-          "combo": "Bloodthirster",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/bloodthirster.png",
-          "stat": "Attacks heal for 50% of dagame"
-        },
-        {
-          "name": "Needlessly Large Rod",
-          "combo": "Ionic Spark",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/ionicspark.png",
-          "stat": "Whenever an enemy casts a spell they take 200 damage"
-        },
-        {
-          "name": "Recurve Bow",
-          "combo": "Cursed blade",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/cursedblade.png",
-          "stat": "Attacks have a low chance to shrink(-1 star lvl)"
-        },
-        {
-          "name": "Giant's belt",
-          "combo": "Zephyr",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/zephyr.png",
-          "stat": "Banish an enemy for 5s on start of combat"
-        },
-        {
-          "name": "Chain west",
-          "combo": "Swordbreaker",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/swordbreaker.png",
-          "stat": "Attacks have a chance to disarm"
-        },
-        {
-          "name": "Negatron cloak",
-          "combo": "Dragonsclaw",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/dragonsclaw.png",
-          "stat": "83% resistance to magic damage"
-        },
-        {
-          "name": "Tear of the goddess",
-          "combo": "Hush",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/hush.png",
-          "stat": "Attacks have a high chance to Silence"
-        },
-        {
-          "name": "Spatula",
-          "combo": "Runaan's hurricane",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/runaanshurricane.png",
-          "stat": "Attacks hit additional enemies and deal 50% damage"
-        }
-      ],
-      "img": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/negatroncloak.png"
-    },
-    {
-      "name": "Tear of the goddess",
-      "stat": "+20 starting mana",
-      "combinations": [
-        {
-          "name": "B.F Sword",
-          "combo": "Spear of Shojin",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/spearofshojin.png",
-          "stat": "After casting, gain 15% of max mana per attack"
-        },
-        {
-          "name": "Needlessly Large Rod",
-          "combo": "Ludens Echo",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/ludensecho.png",
-          "stat": "Deal 200 splash damage on ability hit"
-        },
-        {
-          "name": "Recurve Bow",
-          "combo": "Statikk shiv",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/statikkshiv.png",
-          "stat": "Every 3rd attack deals 100 splash magic damage"
-        },
-        {
-          "name": "Giant's belt",
-          "combo": "Redemption",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/redemption.png",
-          "stat": "On death heals nearby allies for 1000 HP after a short delay"
-        },
-        {
-          "name": "Chain west",
-          "combo": "Frozen heart",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/frozenheart.png",
-          "stat": "Adjacent enemies lose 20% Attack Speed"
-        },
-        {
-          "name": "Negatron cloak",
-          "combo": "Hush",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/hush.png",
-          "stat": "Attacks have a high chance to Silence"
-        },
-        {
-          "name": "Tear of the goddess",
-          "combo": "Seraph's embrace",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/seraphsembrace.png",
-          "stat": "Regain 20 mana each time a spell is cast"
-        },
-        {
-          "name": "Spatula",
-          "combo": "Darkin",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/darkin.png",
-          "stat": "Wearer is also a demon"
-        }
-      ],
-      "img": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/tearofthegoddess.png"
-    },
-    {
-      "name": "Spatula",
-      "stat": "It must do something",
-      "combinations": [
-        {
-          "name": "B.F Sword",
-          "combo": "Youmuu's Ghostblade",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/youmuusghostblade.png",
-          "stat": "Wearer is also an Assassin"
-        },
-        {
-          "name": "Needlessly Large Rod",
-          "combo": "Yuumi",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/yuumi.png",
-          "stat": "Wearer is also a Sorcerer"
-        },
-        {
-          "name": "Recurve Bow",
-          "combo": "Blade of the ruined king",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/bladeoftheruinedking.png",
-          "stat": "Wearer is also a Blademaster"
-        },
-        {
-          "name": "Giant's belt",
-          "combo": "Frozen Mallet",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/frozenmallet.png",
-          "stat": "Wearer is also an Glacial"
-        },
-        {
-          "name": "Chain west",
-          "combo": "Knight's vow",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/knightsvow.png",
-          "stat": "Wearer is also an Assassin"
-        },
-        {
-          "name": "Negatron cloak",
-          "combo": "Runaan's hurricane",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/runaanshurricane.png",
-          "stat": "Attacks hit additional enemies and deal 50% damage"
-        },
-        {
-          "name": "Tear of the goddess",
-          "combo": "Darkin",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/darkin.png",
-          "stat": "Wearer is also a demon"
-        },
-        {
-          "name": "Spatula",
-          "combo": "Force of nature",
-          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/forceofnature.png",
-          "stat": "Gain +1 to team size"
-        }
-      ],
-      "img": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/spatula.png"
-    }
-  ]
+  "bfsword": {
+    "key": "bfsword",
+    "name": "B.F. Sword",
+    "type": "Offensive",
+    "bonus": "+20 Attack Damage.",
+    "tier": 1,
+    "depth": 1,
+    "stats": [
+      {
+        "name": "attackDamage",
+        "title": "Attack Damage",
+        "amount": "+20"
+      }
+    ],
+    "kind": "basic",
+    "buildsInto": [
+      "infinityedge",
+      "hextechgunblade",
+      "guardianangel",
+      "spearofshojin",
+      "swordofthedivine",
+      "youmuusghostblade",
+      "bloodthirster",
+      "zekesherald"
+    ],
+    "champs": ["Ashe", "Yasuo", "Zed"]
+  },
+  "needlesslylargerod": {
+    "key": "needlesslylargerod",
+    "name": "Needlessly Large Rod",
+    "type": "Offensive",
+    "bonus": "+20% Spell Damage",
+    "tier": 1,
+    "depth": 1,
+    "stats": [
+      {
+        "name": "abilityPower",
+        "title": "Spell Damage",
+        "amount": "+20%"
+      }
+    ],
+    "kind": "basic",
+    "buildsInto": [
+      "guinsoosrageblade",
+      "rabadonsdeathcap",
+      "hextechgunblade",
+      "yuumi",
+      "morellonomicon",
+      "ionicspark",
+      "locketoftheironsolari",
+      "ludensecho"
+    ],
+    "champs": ["Ashe", "Yasuo", "Zed"]
+  },
+  "recurvebow": {
+    "key": "recurvebow",
+    "name": "Recurve Bow",
+    "type": "Offensive",
+    "bonus": "+20% Attack Speed",
+    "tier": 1,
+    "depth": 1,
+    "stats": [
+      {
+        "name": "attackSpeed",
+        "title": "Attack Speed",
+        "amount": "+15%"
+      }
+    ],
+    "kind": "basic",
+    "buildsInto": [
+      "statikkshiv",
+      "guinsoosrageblade",
+      "swordofthedivine",
+      "cursedblade",
+      "rapidfirecannon",
+      "phantomdancer",
+      "titanichydra",
+      "bladeoftheruinedking"
+    ],
+    "champs": ["Ashe", "Yasuo", "Zed"]
+  },
+  "chainvest": {
+    "key": "chainvest",
+    "name": "Chain Vest",
+    "type": "Defensive",
+    "bonus": "+20 Armor.",
+    "tier": 1,
+    "depth": 1,
+    "stats": [
+      {
+        "name": "armor",
+        "title": "Armor",
+        "amount": "+20"
+      }
+    ],
+    "kind": "basic",
+    "buildsInto": [
+      "locketoftheironsolari",
+      "guardianangel",
+      "thornmail",
+      "phantomdancer",
+      "frozenheart",
+      "swordbreaker",
+      "redbuff",
+      "knightsvow"
+    ],
+    "champs": ["Ashe", "Yasuo", "Zed"]
+  },
+  "giantsbelt": {
+    "key": "giantsbelt",
+    "name": "Giant's Belt",
+    "type": "Defensive",
+    "bonus": "+200 Health.",
+    "tier": 1,
+    "depth": 1,
+    "stats": [
+      {
+        "name": "health",
+        "title": "Health",
+        "amount": "+200"
+      }
+    ],
+    "kind": "basic",
+    "buildsInto": [
+      "zekesherald",
+      "titanichydra",
+      "morellonomicon",
+      "redemption",
+      "redbuff",
+      "zephyr",
+      "warmogsarmor",
+      "frozenmallet"
+    ],
+    "champs": ["Ashe", "Yasuo", "Zed"]
+  },
+  "spatula": {
+    "key": "spatula",
+    "name": "Spatula",
+    "type": "Utility",
+    "bonus": "It must do something...",
+    "tier": 1,
+    "depth": 1,
+    "stats": [
+      {
+        "name": null,
+        "title": "It must do something...",
+        "amount": null
+      }
+    ],
+    "kind": "basic",
+    "buildsInto": [
+      "forceofnature",
+      "bladeoftheruinedking",
+      "youmuusghostblade",
+      "yuumi",
+      "darkin",
+      "knightsvow",
+      "runaanshurricane",
+      "frozenmallet"
+    ],
+    "champs": ["Ashe", "Yasuo", "Zed"]
+  },
+  "negatroncloak": {
+    "key": "negatroncloak",
+    "name": "Negatron Cloak",
+    "type": "Defensive",
+    "bonus": "+20 Magic Resist.",
+    "tier": 1,
+    "depth": 1,
+    "stats": [
+      {
+        "name": "magicResist",
+        "title": "Magic Resist",
+        "amount": "+20"
+      }
+    ],
+    "kind": "basic",
+    "buildsInto": [
+      "bloodthirster",
+      "ionicspark",
+      "hush",
+      "cursedblade",
+      "runaanshurricane",
+      "zephyr",
+      "dragonsclaw",
+      "swordbreaker"
+    ],
+    "champs": ["Ashe", "Yasuo", "Zed"]
+  },
+  "tearofthegoddess": {
+    "key": "tearofthegoddess",
+    "name": "Tear of the Goddess",
+    "type": "Utility",
+    "bonus": "+20 Starting Mana.",
+    "tier": 1,
+    "depth": 1,
+    "stats": [
+      {
+        "name": "mana",
+        "title": "Starting Mana",
+        "amount": "+20"
+      }
+    ],
+    "kind": "basic",
+    "buildsInto": [
+      "statikkshiv",
+      "ludensecho",
+      "seraphsembrace",
+      "spearofshojin",
+      "frozenheart",
+      "hush",
+      "redemption",
+      "darkin"
+    ],
+    "champs": ["Ashe", "Yasuo", "Zed"]
+  },
+  "forceofnature": {
+    "key": "forceofnature",
+    "name": "Force of Nature",
+    "type": "Utility",
+    "bonus": "Gain + team size.",
+    "tier": 1,
+    "depth": 2,
+    "buildsFrom": ["spatula", "spatula"],
+    "kind": "advanced",
+    "champs": ["Ashe", "Yasuo", "Zed"]
+  },
+  "bladeoftheruinedking": {
+    "key": "bladeoftheruinedking",
+    "name": "Blade of the Ruined King",
+    "type": "Offensive",
+    "bonus": "Wearer is also a Blademaster.",
+    "tier": 1,
+    "depth": 2,
+    "buildsFrom": ["spatula", "recurvebow"],
+    "kind": "advanced",
+    "champs": ["Ashe", "Yasuo", "Zed"]
+  },
+  "bloodthirster": {
+    "key": "bloodthirster",
+    "name": "Bloodthirster",
+    "type": "Defensive",
+    "bonus": "Attacks heal for 50% of damage.",
+    "tier": 1,
+    "depth": 2,
+    "buildsFrom": ["bfsword", "negatroncloak"],
+    "kind": "advanced",
+    "champs": ["Ashe", "Yasuo", "Zed"]
+  },
+  "cursedblade": {
+    "key": "cursedblade",
+    "name": "Cursed Blade",
+    "type": "Utility",
+    "bonus": "Attacks have a low chance to Shrink (-1 enemy star level 1).",
+    "tier": 1,
+    "depth": 2,
+    "buildsFrom": ["negatroncloak", "recurvebow"],
+    "kind": "advanced",
+    "champs": ["Ashe", "Yasuo", "Zed"]
+  },
+  "darkin": {
+    "key": "darkin",
+    "name": "Darkin",
+    "type": "Utility",
+    "bonus": "Wearer is also a Demon.",
+    "tier": 1,
+    "depth": 2,
+    "buildsFrom": ["spatula", "tearofthegoddess"],
+    "kind": "advanced",
+    "champs": ["Ashe", "Yasuo", "Zed"]
+  },
+  "dragonsclaw": {
+    "key": "dragonsclaw",
+    "name": "Dragon's Claw",
+    "type": "Defensive",
+    "bonus": "83% resistance to magic damage.",
+    "tier": 1,
+    "depth": 2,
+    "buildsFrom": ["negatroncloak", "negatroncloak"],
+    "kind": "advanced",
+    "champs": ["Ashe", "Yasuo", "Zed"]
+  },
+  "frozenheart": {
+    "key": "frozenheart",
+    "name": "Frozen Heart",
+    "type": "Defensive",
+    "bonus": "Adjacent enemies lose 20% Attack Speed.",
+    "tier": 1,
+    "depth": 2,
+    "buildsFrom": ["tearofthegoddess", "chainvest"],
+    "kind": "advanced",
+    "champs": ["Ashe", "Yasuo", "Zed"]
+  },
+  "frozenmallet": {
+    "key": "frozenmallet",
+    "name": "Frozen Mallet",
+    "type": "Utility",
+    "bonus": "Wearer is also a Glacial.",
+    "tier": 1,
+    "depth": 2,
+    "buildsFrom": ["giantsbelt", "spatula"],
+    "kind": "advanced",
+    "champs": ["Ashe", "Yasuo", "Zed"]
+  },
+  "guardianangel": {
+    "key": "guardianangel",
+    "name": "Guardian Angel",
+    "type": "Utility",
+    "bonus": "Revives champ with 500 HP.",
+    "tier": 1,
+    "depth": 2,
+    "buildsFrom": ["bfsword", "chainvest"],
+    "kind": "advanced",
+    "champs": ["Ashe", "Yasuo", "Zed"]
+  },
+  "guinsoosrageblade": {
+    "key": "guinsoosrageblade",
+    "name": "Guinsoo's Rageblade",
+    "type": "Offensive",
+    "bonus": "Attacks give 3% Attack Speed. Stacks infinitely.",
+    "tier": 1,
+    "depth": 2,
+    "buildsFrom": ["needlesslylargerod", "recurvebow"],
+    "kind": "advanced",
+    "champs": ["Ashe", "Yasuo", "Zed"]
+  },
+  "hextechgunblade": {
+    "key": "hextechgunblade",
+    "name": "Hextech Gunblade",
+    "type": "Defensive",
+    "bonus": "Heal for 25% of all damage dealt.",
+    "tier": 1,
+    "depth": 2,
+    "buildsFrom": ["bfsword", "needlesslylargerod"],
+    "kind": "advanced",
+    "champs": ["Ashe", "Yasuo", "Zed"]
+  },
+  "hush": {
+    "key": "hush",
+    "name": "Hush",
+    "type": "Utility",
+    "bonus": "Attacks have a high chance to Silence.",
+    "tier": 1,
+    "depth": 2,
+    "buildsFrom": ["tearofthegoddess", "negatroncloak"],
+    "kind": "advanced",
+    "champs": ["Ashe", "Yasuo", "Zed"]
+  },
+  "infinityedge": {
+    "key": "infinityedge",
+    "name": "Infinity Edge",
+    "type": "Offensive",
+    "bonus": "Critical Strikes deal +100% damage.",
+    "tier": 1,
+    "depth": 2,
+    "buildsFrom": ["bfsword", "bfsword"],
+    "kind": "advanced",
+    "champs": ["Ashe", "Yasuo", "Zed"]
+  },
+  "ionicspark": {
+    "key": "ionicspark",
+    "name": "Ionic Spark",
+    "type": "Utility",
+    "bonus": "Whenever an enemy casts a spell they take 200 damage.",
+    "tier": 1,
+    "depth": 2,
+    "buildsFrom": ["negatroncloak", "needlesslylargerod"],
+    "kind": "advanced",
+    "champs": ["Ashe", "Yasuo", "Zed"]
+  },
+  "knightsvow": {
+    "key": "knightsvow",
+    "name": "Knights Vow",
+    "type": "Utility",
+    "bonus": "Wearer is also a Knight.",
+    "tier": 1,
+    "depth": 2,
+    "buildsFrom": ["chainvest", "spatula"],
+    "kind": "advanced",
+    "champs": ["Ashe", "Yasuo", "Zed"]
+  },
+  "locketoftheironsolari": {
+    "key": "locketoftheironsolari",
+    "name": "Locket of the Iron Solari",
+    "type": "Defensive",
+    "bonus": "On start of combat, adjacent allies get 200 shield.",
+    "tier": 1,
+    "depth": 2,
+    "buildsFrom": ["needlesslylargerod", "chainvest"],
+    "kind": "advanced",
+    "champs": ["Ashe", "Yasuo", "Zed"]
+  },
+  "ludensecho": {
+    "key": "ludensecho",
+    "name": "Luden's Echo",
+    "type": "Offensive",
+    "bonus": "Deal 200 splash damage on ability hit.",
+    "tier": 1,
+    "depth": 2,
+    "buildsFrom": ["needlesslylargerod", "tearofthegoddess"],
+    "kind": "advanced",
+    "champs": ["Ashe", "Yasuo", "Zed"]
+  },
+  "morellonomicon": {
+    "key": "morellonomicon",
+    "name": "Morellonomicon",
+    "type": "Offensive",
+    "bonus": "Spells burn 2.5% of the enemy max HP per second.",
+    "tier": 1,
+    "depth": 2,
+    "buildsFrom": ["needlesslylargerod", "giantsbelt"],
+    "kind": "advanced",
+    "champs": ["Ashe", "Yasuo", "Zed"]
+  },
+  "phantomdancer": {
+    "key": "phantomdancer",
+    "name": "Phantom Dancer",
+    "type": "Defensive",
+    "bonus": "Wearer dodges all Critical Strikes.",
+    "tier": 1,
+    "depth": 2,
+    "buildsFrom": ["chainvest", "recurvebow"],
+    "kind": "advanced",
+    "champs": ["Ashe", "Yasuo", "Zed"]
+  },
+  "rabadonsdeathcap": {
+    "key": "rabadonsdeathcap",
+    "name": "Rabadon's Deathcap",
+    "type": "Offensive",
+    "bonus": "Wearer's Ability Damage increased by 50%.",
+    "tier": 1,
+    "depth": 2,
+    "buildsFrom": ["needlesslylargerod", "needlesslylargerod"],
+    "kind": "advanced",
+    "champs": ["Ashe", "Yasuo", "Zed"]
+  },
+  "rapidfirecannon": {
+    "key": "rapidfirecannon",
+    "name": "Rapid Firecannon",
+    "type": "Offensive",
+    "bonus": "Attacks cannot be dodged. Attack Range is doubled.",
+    "tier": 1,
+    "depth": 2,
+    "buildsFrom": ["recurvebow", "recurvebow"],
+    "kind": "advanced",
+    "champs": ["Ashe", "Yasuo", "Zed"]
+  },
+  "redbuff": {
+    "key": "redbuff",
+    "name": "Red Buff",
+    "type": "Offensive",
+    "bonus": "Attacks burn for 2.5% max HP and disable healing.",
+    "tier": 1,
+    "depth": 2,
+    "buildsFrom": ["chainvest", "giantsbelt"],
+    "kind": "advanced",
+    "champs": ["Ashe", "Yasuo", "Zed"]
+  },
+  "redemption": {
+    "key": "redemption",
+    "name": "Redemption",
+    "type": "Utility",
+    "bonus": "On death heal all nearby allies for 1000 HP.",
+    "tier": 1,
+    "depth": 2,
+    "buildsFrom": ["tearofthegoddess", "giantsbelt"],
+    "kind": "advanced",
+    "champs": ["Ashe", "Yasuo", "Zed"]
+  },
+  "runaanshurricane": {
+    "key": "runaanshurricane",
+    "name": "Runaan's Hurricane",
+    "type": "Offensive",
+    "bonus": "Attacks hit additional enemies and deal 50% damage.",
+    "tier": 1,
+    "depth": 2,
+    "buildsFrom": ["spatula", "negatroncloak"],
+    "kind": "advanced",
+    "champs": ["Ashe", "Yasuo", "Zed"]
+  },
+  "seraphsembrace": {
+    "key": "seraphsembrace",
+    "name": "Runaan's Hurricane",
+    "type": "Utility",
+    "bonus": "Regain 20 mana each time a spell is cast",
+    "tier": 1,
+    "depth": 2,
+    "buildsFrom": ["tearofthegoddess", "tearofthegoddess"],
+    "kind": "advanced",
+    "champs": ["Ashe", "Yasuo", "Zed"]
+  },
+  "spearofshojin": {
+    "key": "spearofshojin",
+    "name": "Spear of Shojin",
+    "type": "Utility",
+    "bonus": "After casting, gain 15% of max mana per attack.",
+    "tier": 1,
+    "depth": 2,
+    "buildsFrom": ["bfsword", "tearofthegoddess"],
+    "kind": "advanced",
+    "champs": ["Ashe", "Yasuo", "Zed"]
+  },
+  "statikkshiv": {
+    "key": "statikkshiv",
+    "name": "Statikk Shiv",
+    "type": "Offensive",
+    "bonus": "Every 3rd attack deals 100 splash magical damage.",
+    "tier": 1,
+    "depth": 2,
+    "buildsFrom": ["recurvebow", "tearofthegoddess"],
+    "kind": "advanced",
+    "champs": ["Ashe", "Yasuo", "Zed"]
+  },
+  "swordbreaker": {
+    "key": "swordbreaker",
+    "name": "Sword Breaker",
+    "type": "Utility",
+    "bonus": "Attacks have a chance to disarm.",
+    "tier": 1,
+    "depth": 2,
+    "buildsFrom": ["chainvest", "negatroncloak"],
+    "kind": "advanced",
+    "champs": ["Ashe", "Yasuo", "Zed"]
+  },
+  "swordofthedivine": {
+    "key": "swordofthedivine",
+    "name": "Sword of the Divine",
+    "type": "Offensive",
+    "bonus": "Every 1s gain a 5% chance to gain 100% Critical Strike.",
+    "tier": 1,
+    "depth": 2,
+    "buildsFrom": ["recurvebow", "bfsword"],
+    "kind": "advanced",
+    "champs": ["Ashe", "Yasuo", "Zed"]
+  },
+  "thornmail": {
+    "key": "thornmail",
+    "name": "Thornmail",
+    "type": "Defensive",
+    "bonus": "Reflect 35% of damage taken from attacks.",
+    "tier": 1,
+    "depth": 2,
+    "buildsFrom": ["chainvest", "chainvest"],
+    "kind": "advanced",
+    "champs": ["Ashe", "Yasuo", "Zed"]
+  },
+  "titanichydra": {
+    "key": "titanichydra",
+    "name": "Titanic Hydra",
+    "type": "Offensive",
+    "bonus": "Attacks deal 10% of the wearer's max HP as splash.",
+    "tier": 1,
+    "depth": 2,
+    "buildsFrom": ["giantsbelt", "recurvebow"],
+    "kind": "advanced",
+    "champs": ["Ashe", "Yasuo", "Zed"]
+  },
+  "warmogsarmor": {
+    "key": "warmogsarmor",
+    "name": "Warmog's Armor",
+    "type": "Defensive",
+    "bonus": "Regenerate 3% max Health per second.",
+    "tier": 1,
+    "depth": 2,
+    "buildsFrom": ["giantsbelt", "giantsbelt"],
+    "kind": "advanced",
+    "champs": ["Ashe", "Yasuo", "Zed"]
+  },
+  "youmuusghostblade": {
+    "key": "youmuusghostblade",
+    "name": "Youmuu's Ghostblade",
+    "type": "Utility",
+    "bonus": "Wearer is also an Assassin.",
+    "tier": 1,
+    "depth": 2,
+    "buildsFrom": ["spatula", "bfsword"],
+    "kind": "advanced",
+    "champs": ["Ashe", "Yasuo", "Zed"]
+  },
+  "yuumi": {
+    "key": "yuumi",
+    "name": "Yuumi",
+    "type": "Utility",
+    "bonus": "Wearer is also a Sorcerer.",
+    "tier": 1,
+    "depth": 2,
+    "buildsFrom": ["spatula", "needlesslylargerod"],
+    "kind": "advanced",
+    "champs": ["Ashe", "Yasuo", "Zed"]
+  },
+  "zekesherald": {
+    "key": "zekesherald",
+    "name": "Zeke's Herald",
+    "type": "Utility",
+    "bonus": "Adjacent allies gain +10% Attack Speed.",
+    "tier": 1,
+    "depth": 2,
+    "buildsFrom": ["bfsword", "giantsbelt"],
+    "kind": "advanced",
+    "champs": ["Ashe", "Yasuo", "Zed"]
+  },
+  "zephyr": {
+    "key": "zephyr",
+    "name": "Zephyr",
+    "type": "Utility",
+    "bonus": "On start of combat banish an enemy.",
+    "tier": 1,
+    "depth": 2,
+    "buildsFrom": ["negatroncloak", "giantsbelt"],
+    "kind": "advanced",
+    "champs": ["Ashe", "Yasuo", "Zed"]
+  }
 }

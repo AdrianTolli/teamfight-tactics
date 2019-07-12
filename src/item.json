@@ -1,0 +1,444 @@
+{
+  "items": [
+    {
+      "name": "B.F Sword",
+      "stat": "+20 attack damage",
+      "combinations": [
+        {
+          "name": "B.F Sword",
+          "combo": "Infinity Edge",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/infinityedge.png",
+          "stat": "Critical strike deal +100% damage"
+        },
+        {
+          "name": "Needlessly Large Rod",
+          "combo": "Hextech Gunblade",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/hextechgunblade.png",
+          "stat": "Heal for 25% of all damage dealt"
+        },
+        {
+          "name": "Recurve Bow",
+          "combo": "Sword Of The Divine",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/swordofthedivine.png",
+          "stat": "Every 1s gain 5% chance to gain 100% critical strike"
+        },
+        {
+          "name": "Giant's belt",
+          "combo": "Zeke's Herald",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/zekesherald.png",
+          "stat": "Adjacant allies gain 10% attack speed"
+        },
+        {
+          "name": "Chain west",
+          "combo": "Guardians Angel",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/guardianangel.png",
+          "stat": "Revives the wearer with 500 HP upon death"
+        },
+        {
+          "name": "Negatron cloak",
+          "combo": "Bloodthirster",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/bloodthirster.png",
+          "stat": "Attacks heal for 50% of dagame"
+        },
+        {
+          "name": "Tear of the goddess",
+          "combo": "Spear of Shojin",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/spearofshojin.png",
+          "stat": "After casting, gain 15% of max mana per attack"
+        },
+        {
+          "name": "Spatula",
+          "combo": "Youmuu's Ghostblade",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/youmuusghostblade.png",
+          "stat": "Wearer is also an Assassin"
+        }
+      ],
+      "img": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/bfsword.png"
+    },
+    {
+      "name": "Needlessly Large Rod",
+      "stat": "+20% Spell damage",
+      "combinations": [
+        {
+          "name": "B.F Sword",
+          "combo": "Hextech Gunblade",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/hextechgunblade.png",
+          "stat": "Heal for 25% of all damage dealt"
+        },
+        {
+          "name": "Needlessly Large Rod",
+          "combo": "Rabadons Deathcap",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/rabadonsdeathcap.png",
+          "stat": "Wearer's ability deal 50% increased damage"
+        },
+        {
+          "name": "Recurve Bow",
+          "combo": "Guinsoo's Rageblade",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/guinsoosrageblade.png",
+          "stat": "Attacks give 3% attack speed. Stacks infinitely"
+        },
+        {
+          "name": "Giant's belt",
+          "combo": "Morellonomicon",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/morellonomicon.png",
+          "stat": "Spells burn 2.5% of the enemy max HP per second"
+        },
+        {
+          "name": "Chain west",
+          "combo": "Locket of the Iron Solaris",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/locketoftheironsolari.png",
+          "stat": "On start of combat, adjacent allies get 200 shield."
+        },
+        {
+          "name": "Negatron cloak",
+          "combo": "Ionic Spark",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/ionicspark.png",
+          "stat": "Whenever an enemy casts a spell they take 200 damage"
+        },
+        {
+          "name": "Tear of the goddess",
+          "combo": "Ludens Echo",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/ludensecho.png",
+          "stat": "Deal 200 splash damage on ability hit"
+        },
+        {
+          "name": "Spatula",
+          "combo": "Yuumi",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/yuumi.png",
+          "stat": "Wearer is also a Sorcerer"
+        }
+      ],
+      "img": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/needlesslylargerod.png"
+    },
+    {
+      "name": "Recurve Bow",
+      "stat": "+15% Attack Speed",
+      "combinations": [
+        {
+          "name": "B.F Sword",
+          "combo": "Sword of the divine",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/swordofthedivine.png",
+          "stat": "Every 1s gain 5% chance to get 100% chritical chance"
+        },
+        {
+          "name": "Needlessly Large Rod",
+          "combo": "Guinsoo's Rageblade",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/guinsoosrageblade.png",
+          "stat": "Attacks give 3% attack speed. Stacks infinitely"
+        },
+        {
+          "name": "Recurve Bow",
+          "combo": "Rapid Firecannon",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/rapidfirecannon.png",
+          "stat": "Attacks cannot be dodged. Attack range is doubled"
+        },
+        {
+          "name": "Giant's belt",
+          "combo": "Titanic Hydra",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/titanichydra.png",
+          "stat": "Attacks deal 10% of wearer's max hp as cleave damage"
+        },
+        {
+          "name": "Chain west",
+          "combo": "Phantomdancer",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/phantomdancer.png",
+          "stat": "Wearer dodges all critical strikes"
+        },
+        {
+          "name": "Negatron cloak",
+          "combo": "Cursed blade",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/cursedblade.png",
+          "stat": "Attacks have a low chance to shrink(-1 star lvl)"
+        },
+        {
+          "name": "Tear of the goddess",
+          "combo": "Statikk shiv",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/statikkshiv.png",
+          "stat": "Every 3rd attack deals 100 splash magic damage"
+        },
+        {
+          "name": "Spatula",
+          "combo": "Blade of the ruined king",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/bladeoftheruinedking.png",
+          "stat": "Wearer is also a Blademaster"
+        }
+      ],
+      "img": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/recurvebow.png"
+    },
+    {
+      "name": "Giant's belt",
+      "stat": "+200 health",
+      "combinations": [
+        {
+          "name": "B.F Sword",
+          "combo": "Zeke's Herald",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/zekesherald.png",
+          "stat": "Adjacant allies gain 10% attack speed"
+        },
+        {
+          "name": "Needlessly Large Rod",
+          "combo": "Morellonomicon",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/morellonomicon.png",
+          "stat": "Spells burn 2.5% of the enemy max HP per second"
+        },
+        {
+          "name": "Recurve Bow",
+          "combo": "Titanic Hydra",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/titanichydra.png",
+          "stat": "Attacks deal 10% of wearer's max hp as cleave damage"
+        },
+        {
+          "name": "Giant's belt",
+          "combo": "Warmog's Armor",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/warmogsarmor.png",
+          "stat": "Regen 3% of max health per second"
+        },
+        {
+          "name": "Chain west",
+          "combo": "Red buff",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/redbuff.png",
+          "stat": "Attacks burn 2.5% of targets max health and disable healing"
+        },
+        {
+          "name": "Negatron cloak",
+          "combo": "Zephyr",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/zephyr.png",
+          "stat": "Banish an enemy for 5s on start of combat"
+        },
+        {
+          "name": "Tear of the goddess",
+          "combo": "Redemption",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/redemption.png",
+          "stat": "On death heals nearby allies for 1000 HP after a short delay"
+        },
+        {
+          "name": "Spatula",
+          "combo": "Frozen Mallet",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/frozenmallet.png",
+          "stat": "Wearer is also an Glacial"
+        }
+      ],
+      "img": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/giantsbelt.png"
+    },
+    {
+      "name": "Chain west",
+      "stat": "+20 armor",
+      "combinations": [
+        {
+          "name": "B.F Sword",
+          "combo": "Guardians Angel",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/guardianangel.png",
+          "stat": "Revives the wearer with 500 HP upon death"
+        },
+        {
+          "name": "Needlessly Large Rod",
+          "combo": "Locket of the Iron Solaris",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/locketoftheironsolari.png",
+          "stat": "On start of combat, adjacent allies get 200 shield."
+        },
+        {
+          "name": "Recurve Bow",
+          "combo": "Phantomdancer",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/phantomdancer.png",
+          "stat": "Wearer dodges all critical strikes"
+        },
+        {
+          "name": "Giant's belt",
+          "combo": "Red buff",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/redbuff.png",
+          "stat": "Attacks burn 2.5% of targets max health and disable healing"
+        },
+        {
+          "name": "Chain west",
+          "combo": "Thorn mail",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/thornmail.png",
+          "stat": "Refelct 50% of damage taken from attacks"
+        },
+        {
+          "name": "Negatron cloak",
+          "combo": "Swordbreaker",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/swordbreaker.png",
+          "stat": "Attacks have a chance to disarm"
+        },
+        {
+          "name": "Tear of the goddess",
+          "combo": "Frozen heart",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/frozenheart.png",
+          "stat": "Adjacent enemies lose 20% Attack Speed"
+        },
+        {
+          "name": "Spatula",
+          "combo": "Knight's vow",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/knightsvow.png",
+          "stat": "Wearer is also an Assassin"
+        }
+      ],
+      "img": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/chainvest.png"
+    },
+    {
+      "name": "Negatron cloak",
+      "stat": "+20 magic resist",
+      "combinations": [
+        {
+          "name": "B.F Sword",
+          "combo": "Bloodthirster",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/bloodthirster.png",
+          "stat": "Attacks heal for 50% of dagame"
+        },
+        {
+          "name": "Needlessly Large Rod",
+          "combo": "Ionic Spark",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/ionicspark.png",
+          "stat": "Whenever an enemy casts a spell they take 200 damage"
+        },
+        {
+          "name": "Recurve Bow",
+          "combo": "Cursed blade",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/cursedblade.png",
+          "stat": "Attacks have a low chance to shrink(-1 star lvl)"
+        },
+        {
+          "name": "Giant's belt",
+          "combo": "Zephyr",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/zephyr.png",
+          "stat": "Banish an enemy for 5s on start of combat"
+        },
+        {
+          "name": "Chain west",
+          "combo": "Swordbreaker",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/swordbreaker.png",
+          "stat": "Attacks have a chance to disarm"
+        },
+        {
+          "name": "Negatron cloak",
+          "combo": "Dragonsclaw",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/dragonsclaw.png",
+          "stat": "83% resistance to magic damage"
+        },
+        {
+          "name": "Tear of the goddess",
+          "combo": "Hush",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/hush.png",
+          "stat": "Attacks have a high chance to Silence"
+        },
+        {
+          "name": "Spatula",
+          "combo": "Runaan's hurricane",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/runaanshurricane.png",
+          "stat": "Attacks hit additional enemies and deal 50% damage"
+        }
+      ],
+      "img": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/negatroncloak.png"
+    },
+    {
+      "name": "Tear of the goddess",
+      "stat": "+20 starting mana",
+      "combinations": [
+        {
+          "name": "B.F Sword",
+          "combo": "Spear of Shojin",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/spearofshojin.png",
+          "stat": "After casting, gain 15% of max mana per attack"
+        },
+        {
+          "name": "Needlessly Large Rod",
+          "combo": "Ludens Echo",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/ludensecho.png",
+          "stat": "Deal 200 splash damage on ability hit"
+        },
+        {
+          "name": "Recurve Bow",
+          "combo": "Statikk shiv",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/statikkshiv.png",
+          "stat": "Every 3rd attack deals 100 splash magic damage"
+        },
+        {
+          "name": "Giant's belt",
+          "combo": "Redemption",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/redemption.png",
+          "stat": "On death heals nearby allies for 1000 HP after a short delay"
+        },
+        {
+          "name": "Chain west",
+          "combo": "Frozen heart",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/frozenheart.png",
+          "stat": "Adjacent enemies lose 20% Attack Speed"
+        },
+        {
+          "name": "Negatron cloak",
+          "combo": "Hush",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/hush.png",
+          "stat": "Attacks have a high chance to Silence"
+        },
+        {
+          "name": "Tear of the goddess",
+          "combo": "Seraph's embrace",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/seraphsembrace.png",
+          "stat": "Regain 20 mana each time a spell is cast"
+        },
+        {
+          "name": "Spatula",
+          "combo": "Darkin",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/darkin.png",
+          "stat": "Wearer is also a demon"
+        }
+      ],
+      "img": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/tearofthegoddess.png"
+    },
+    {
+      "name": "Spatula",
+      "stat": "It must do something",
+      "combinations": [
+        {
+          "name": "B.F Sword",
+          "combo": "Youmuu's Ghostblade",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/youmuusghostblade.png",
+          "stat": "Wearer is also an Assassin"
+        },
+        {
+          "name": "Needlessly Large Rod",
+          "combo": "Yuumi",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/yuumi.png",
+          "stat": "Wearer is also a Sorcerer"
+        },
+        {
+          "name": "Recurve Bow",
+          "combo": "Blade of the ruined king",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/bladeoftheruinedking.png",
+          "stat": "Wearer is also a Blademaster"
+        },
+        {
+          "name": "Giant's belt",
+          "combo": "Frozen Mallet",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/frozenmallet.png",
+          "stat": "Wearer is also an Glacial"
+        },
+        {
+          "name": "Chain west",
+          "combo": "Knight's vow",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/knightsvow.png",
+          "stat": "Wearer is also an Assassin"
+        },
+        {
+          "name": "Negatron cloak",
+          "combo": "Runaan's hurricane",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/runaanshurricane.png",
+          "stat": "Attacks hit additional enemies and deal 50% damage"
+        },
+        {
+          "name": "Tear of the goddess",
+          "combo": "Darkin",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/darkin.png",
+          "stat": "Wearer is also a demon"
+        },
+        {
+          "name": "Spatula",
+          "combo": "Force of nature",
+          "comboImg": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/forceofnature.png",
+          "stat": "Gain +1 to team size"
+        }
+      ],
+      "img": "https://solomid-resources.s3.amazonaws.com/blitz/tft/items/spatula.png"
+    }
+  ]
+}
