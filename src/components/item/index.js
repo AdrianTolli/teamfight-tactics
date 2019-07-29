@@ -16,12 +16,6 @@ class Item extends Component {
   findBonus(name) {
     for (var i = 0; i < this.props.fullData.length; i++) {
       if (name === this.props.fullData[i].key) {
-        console.log(
-          "found:",
-          this.props.fullData[i].key,
-          ":",
-          this.props.fullData[i].bonus
-        );
         return this.props.fullData[i].bonus;
       }
     }
@@ -41,55 +35,32 @@ class Item extends Component {
   renderCombinations() {
     var itemCombination = [];
     for (var i = 0; i < this.props.data.buildsInto.length; i++) {
-      i % 2 === 0
-        ? itemCombination.push(
-            <div className="comboContainer">
-              <img
-                src={this.state.spriteURL + this.props.fullData[i].key + ".png"}
-              />
-              <span>→</span>
-              <img
-                src={
-                  this.state.spriteURL +
-                  this.findCombination(
-                    this.props.data.key,
-                    this.props.fullData[i].key
-                  ) +
-                  ".png"
-                }
-              />
-              {this.findBonus(
-                this.findCombination(
-                  this.props.data.key,
-                  this.props.fullData[i].key
-                )
-              )}
-            </div>
-          )
-        : itemCombination.push(
-            <div className="comboContainer highlight">
-              <img
-                src={this.state.spriteURL + this.props.fullData[i].key + ".png"}
-              />{" "}
-              <span>→</span>
-              <img
-                src={
-                  this.state.spriteURL +
-                  this.findCombination(
-                    this.props.data.key,
-                    this.props.fullData[i].key
-                  ) +
-                  ".png"
-                }
-              />
-              {this.findBonus(
-                this.findCombination(
-                  this.props.data.key,
-                  this.props.fullData[i].key
-                )
-              )}
-            </div>
-          );
+      itemCombination.push(
+        <div className={`comboContainer ${i % 2 === 0 ? "" : "highlight"}`}>
+          <img
+            src={this.state.spriteURL + this.props.fullData[i].key + ".png"}
+            alt=""
+          />
+          <span>→</span>
+          <img
+            src={
+              this.state.spriteURL +
+              this.findCombination(
+                this.props.data.key,
+                this.props.fullData[i].key
+              ) +
+              ".png"
+            }
+            alt=""
+          />
+          {this.findBonus(
+            this.findCombination(
+              this.props.data.key,
+              this.props.fullData[i].key
+            )
+          )}
+        </div>
+      );
     }
     return itemCombination;
   }
@@ -98,7 +69,10 @@ class Item extends Component {
     return (
       <div className="itemCard">
         <div className="highlight">
-          <img src={this.state.spriteURL + this.props.data.key + ".png"} />
+          <img
+            src={this.state.spriteURL + this.props.data.key + ".png"}
+            alt=""
+          />
           {this.props.data.name}
         </div>
         {this.renderCombinations()}

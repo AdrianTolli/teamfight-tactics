@@ -7,15 +7,15 @@
     "bonuses": [
       {
         "needed": 2,
-        "effect": "40% chance on hit to Mana Burn"
+        "effect": "25% chance on hit to Mana Burn"
       },
       {
         "needed": 4,
-        "effect": "60% chance on hit to Mana Burn"
+        "effect": "50% chance on hit to Mana Burn"
       },
       {
         "needed": 6,
-        "effect": "80% chance on hit to Mana Burn"
+        "effect": "85% chance on hit to Mana Burn"
       }
     ]
   },
@@ -119,7 +119,7 @@
     "bonuses": [
       {
         "needed": 3,
-        "effect": "Earn up to 4 additional gold after combat against another player."
+        "effect": "Earn up to 4 additional gold after combat against another player (avg 1.6g per chest)."
       }
     ]
   },
@@ -162,7 +162,7 @@
   "wild": {
     "key": "wild",
     "name": "Wild",
-    "description": "Attacks generate stacks of Fury (up to 5). Each stack of Fury grants 7% Attack Speed.",
+    "description": "Attacks generate stacks of Fury (up to 5). Each stack of Fury grants 10% Attack Speed.",
     "accentChampionImage": "https://cdn.blitz.gg/blitz/centered/Rengar_Splash_Centered_0.jpg",
     "bonuses": [
       {

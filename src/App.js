@@ -15,6 +15,7 @@ class App extends Component {
       itemData: null,
       originData: null,
       classData: null,
+      tierListData: null,
       spriteURL: "https://ddragon.leagueoflegends.com/cdn/9.12.1/img/champion/",
       sortedBy: "name"
     };
@@ -47,12 +48,18 @@ class App extends Component {
     });
 
     const originData = require("./origins.json");
+    var originObject = Object.keys(originData).map(key => originData[key]);
     this.setState({
-      originData: originData
+      originData: originObject
     });
     const classData = require("./classes.json");
+    var classObject = Object.keys(classData).map(key => classData[key]);
     this.setState({
-      classData: classData
+      classData: classObject
+    });
+    const tierListData = require("./tierlist.json");
+    this.setState({
+      tierListData: tierListData
     });
   }
 
@@ -60,21 +67,13 @@ class App extends Component {
     var championCards = [];
     if (this.state.championData != null) {
       for (var i = 0; i < this.state.championData.length; i++) {
-        i % 2 === 0
-          ? championCards.push(
-              <Champion
-                imgURL={this.state.spriteURL}
-                data={this.state.championData[i]}
-                classname="championCard"
-              />
-            )
-          : championCards.push(
-              <Champion
-                imgURL={this.state.spriteURL}
-                data={this.state.championData[i]}
-                classname="championCard highlight"
-              />
-            );
+        championCards.push(
+          <Champion
+            imgURL={this.state.spriteURL}
+            data={this.state.championData[i]}
+            classname={`championCard ${i % 2 === 0 ? "" : "highlight"}`}
+          />
+        );
       }
     }
     return <div className="allChampContainer">{championCards}</div>;
@@ -238,8 +237,9 @@ class App extends Component {
           <div className="displayItemContainer">{this.renderItems()}</div>
         ) : this.state.displayedContent === "teambuilder" ? (
           <Teambuilder
-            champData={this.state.champData}
-            synergyData={this.state.synergyData}
+            champData={this.state.championData}
+            originData={this.state.originData}
+            classData={this.state.classData}
           />
         ) : (
           <span>

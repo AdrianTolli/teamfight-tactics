@@ -1,0 +1,13 @@
+.synergyContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.synergyCount {
+  flex: 1;
+}
+
+.synergyBonuses {
+  flex: 3;
+}

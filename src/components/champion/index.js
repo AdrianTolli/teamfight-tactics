@@ -13,8 +13,6 @@ class Champion extends Component {
   }
 
   renderClass() {
-    var class1 = "";
-    var class2 = "";
     var finalClasses = "";
     if (this.props.data.class.length === 1) {
       finalClasses = this.props.data.class[0];
@@ -33,6 +31,7 @@ class Champion extends Component {
           <img
             src={this.props.imgURL + this.props.data.key + ".png"}
             className="champSprite"
+            alt=""
           />
           {this.props.data.name}
         </div>

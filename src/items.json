@@ -17,12 +17,12 @@
     "buildsInto": [
       "infinityedge",
       "hextechgunblade",
-      "guardianangel",
-      "spearofshojin",
       "swordofthedivine",
-      "youmuusghostblade",
+      "spearofshojin",
+      "guardianangel",
       "bloodthirster",
-      "zekesherald"
+      "zekesherald",
+      "youmuusghostblade"
     ],
     "champs": ["Ashe", "Yasuo", "Zed"]
   },
@@ -42,14 +42,14 @@
     ],
     "kind": "basic",
     "buildsInto": [
-      "guinsoosrageblade",
-      "rabadonsdeathcap",
       "hextechgunblade",
-      "yuumi",
-      "morellonomicon",
-      "ionicspark",
+      "rabadonsdeathcap",
+      "guinsoosrageblade",
+      "ludensecho",
       "locketoftheironsolari",
-      "ludensecho"
+      "ionicspark",
+      "morellonomicon",
+      "yuumi"
     ],
     "champs": ["Ashe", "Yasuo", "Zed"]
   },
@@ -64,19 +64,46 @@
       {
         "name": "attackSpeed",
         "title": "Attack Speed",
-        "amount": "+15%"
+        "amount": "+20%"
       }
     ],
     "kind": "basic",
     "buildsInto": [
-      "statikkshiv",
-      "guinsoosrageblade",
       "swordofthedivine",
-      "cursedblade",
+      "guinsoosrageblade",
       "rapidfirecannon",
+      "statikkshiv",
       "phantomdancer",
+      "cursedblade",
       "titanichydra",
       "bladeoftheruinedking"
+    ],
+    "champs": ["Ashe", "Yasuo", "Zed"]
+  },
+  "tearofthegoddess": {
+    "key": "tearofthegoddess",
+    "name": "Tear of the Goddess",
+    "type": "Utility",
+    "bonus": "+20 Starting Mana.",
+    "tier": 1,
+    "depth": 1,
+    "stats": [
+      {
+        "name": "mana",
+        "title": "Starting Mana",
+        "amount": "+20"
+      }
+    ],
+    "kind": "basic",
+    "buildsInto": [
+      "spearofshojin",
+      "ludensecho",
+      "statikkshiv",
+      "seraphsembrace",
+      "frozenheart",
+      "hush",
+      "redemption",
+      "darkin"
     ],
     "champs": ["Ashe", "Yasuo", "Zed"]
   },
@@ -96,14 +123,41 @@
     ],
     "kind": "basic",
     "buildsInto": [
-      "locketoftheironsolari",
       "guardianangel",
-      "thornmail",
+      "locketoftheironsolari",
       "phantomdancer",
       "frozenheart",
+      "thornmail",
       "swordbreaker",
       "redbuff",
       "knightsvow"
+    ],
+    "champs": ["Ashe", "Yasuo", "Zed"]
+  },
+  "negatroncloak": {
+    "key": "negatroncloak",
+    "name": "Negatron Cloak",
+    "type": "Defensive",
+    "bonus": "+20 Magic Resist.",
+    "tier": 1,
+    "depth": 1,
+    "stats": [
+      {
+        "name": "magicResist",
+        "title": "Magic Resist",
+        "amount": "+20"
+      }
+    ],
+    "kind": "basic",
+    "buildsInto": [
+      "bloodthirster",
+      "ionicspark",
+      "cursedblade",
+      "hush",
+      "swordbreaker",
+      "dragonsclaw",
+      "zephyr",
+      "runaanshurricane"
     ],
     "champs": ["Ashe", "Yasuo", "Zed"]
   },
@@ -124,8 +178,8 @@
     "kind": "basic",
     "buildsInto": [
       "zekesherald",
-      "titanichydra",
       "morellonomicon",
+      "titanichydra",
       "redemption",
       "redbuff",
       "zephyr",
@@ -150,68 +204,14 @@
     ],
     "kind": "basic",
     "buildsInto": [
-      "forceofnature",
-      "bladeoftheruinedking",
       "youmuusghostblade",
       "yuumi",
+      "bladeoftheruinedking",
       "darkin",
       "knightsvow",
       "runaanshurricane",
-      "frozenmallet"
-    ],
-    "champs": ["Ashe", "Yasuo", "Zed"]
-  },
-  "negatroncloak": {
-    "key": "negatroncloak",
-    "name": "Negatron Cloak",
-    "type": "Defensive",
-    "bonus": "+20 Magic Resist.",
-    "tier": 1,
-    "depth": 1,
-    "stats": [
-      {
-        "name": "magicResist",
-        "title": "Magic Resist",
-        "amount": "+20"
-      }
-    ],
-    "kind": "basic",
-    "buildsInto": [
-      "bloodthirster",
-      "ionicspark",
-      "hush",
-      "cursedblade",
-      "runaanshurricane",
-      "zephyr",
-      "dragonsclaw",
-      "swordbreaker"
-    ],
-    "champs": ["Ashe", "Yasuo", "Zed"]
-  },
-  "tearofthegoddess": {
-    "key": "tearofthegoddess",
-    "name": "Tear of the Goddess",
-    "type": "Utility",
-    "bonus": "+20 Starting Mana.",
-    "tier": 1,
-    "depth": 1,
-    "stats": [
-      {
-        "name": "mana",
-        "title": "Starting Mana",
-        "amount": "+20"
-      }
-    ],
-    "kind": "basic",
-    "buildsInto": [
-      "statikkshiv",
-      "ludensecho",
-      "seraphsembrace",
-      "spearofshojin",
-      "frozenheart",
-      "hush",
-      "redemption",
-      "darkin"
+      "frozenmallet",
+      "forceofnature"
     ],
     "champs": ["Ashe", "Yasuo", "Zed"]
   },
@@ -252,7 +252,7 @@
     "key": "cursedblade",
     "name": "Cursed Blade",
     "type": "Utility",
-    "bonus": "Attacks have a low chance to Shrink (-1 enemy star level 1).",
+    "bonus": "Attacks have a low chance to Shrink (-1 enemy star, down to level 0).",
     "tier": 1,
     "depth": 2,
     "buildsFrom": ["negatroncloak", "recurvebow"],
@@ -285,7 +285,7 @@
     "key": "frozenheart",
     "name": "Frozen Heart",
     "type": "Defensive",
-    "bonus": "Adjacent enemies lose 20% Attack Speed.",
+    "bonus": "Adjacent enemies lose 25% Attack Speed.",
     "tier": 1,
     "depth": 2,
     "buildsFrom": ["tearofthegoddess", "chainvest"],
@@ -307,7 +307,7 @@
     "key": "guardianangel",
     "name": "Guardian Angel",
     "type": "Utility",
-    "bonus": "Revives champ with 500 HP.",
+    "bonus": "Revives champ with 1000 HP after 2 seconds.",
     "tier": 1,
     "depth": 2,
     "buildsFrom": ["bfsword", "chainvest"],
@@ -318,7 +318,7 @@
     "key": "guinsoosrageblade",
     "name": "Guinsoo's Rageblade",
     "type": "Offensive",
-    "bonus": "Attacks give 3% Attack Speed. Stacks infinitely.",
+    "bonus": "Attacks give 4% Attack Speed. Stacks infinitely.",
     "tier": 1,
     "depth": 2,
     "buildsFrom": ["needlesslylargerod", "recurvebow"],
@@ -329,7 +329,7 @@
     "key": "hextechgunblade",
     "name": "Hextech Gunblade",
     "type": "Defensive",
-    "bonus": "Heal for 25% of all damage dealt.",
+    "bonus": "Heal for 33% of all damage dealt.",
     "tier": 1,
     "depth": 2,
     "buildsFrom": ["bfsword", "needlesslylargerod"],
@@ -362,7 +362,7 @@
     "key": "ionicspark",
     "name": "Ionic Spark",
     "type": "Utility",
-    "bonus": "Whenever an enemy casts a spell they take 200 damage.",
+    "bonus": "Whenever an enemy casts a spell they take 200 true damage.",
     "tier": 1,
     "depth": 2,
     "buildsFrom": ["negatroncloak", "needlesslylargerod"],
@@ -384,7 +384,7 @@
     "key": "locketoftheironsolari",
     "name": "Locket of the Iron Solari",
     "type": "Defensive",
-    "bonus": "On start of combat, adjacent allies get 200 shield.",
+    "bonus": "On start of combat, allies 2 spaces to the left and right gain <strong style='color: white;'>200 shield.</span>",
     "tier": 1,
     "depth": 2,
     "buildsFrom": ["needlesslylargerod", "chainvest"],
@@ -406,7 +406,7 @@
     "key": "morellonomicon",
     "name": "Morellonomicon",
     "type": "Offensive",
-    "bonus": "Spells burn 2.5% of the enemy max HP per second.",
+    "bonus": "Spells burn for 15% of max HP over 5s and disable healing.",
     "tier": 1,
     "depth": 2,
     "buildsFrom": ["needlesslylargerod", "giantsbelt"],
@@ -450,7 +450,7 @@
     "key": "redbuff",
     "name": "Red Buff",
     "type": "Offensive",
-    "bonus": "Attacks burn for 2.5% max HP and disable healing.",
+    "bonus": "Attacks burn for 13% of max HP over 5s and disable healing.",
     "tier": 1,
     "depth": 2,
     "buildsFrom": ["chainvest", "giantsbelt"],
@@ -461,7 +461,7 @@
     "key": "redemption",
     "name": "Redemption",
     "type": "Utility",
-    "bonus": "On death heal all nearby allies for 1000 HP.",
+    "bonus": "At 25% health heal all nearby allies for 1000 HP.",
     "tier": 1,
     "depth": 2,
     "buildsFrom": ["tearofthegoddess", "giantsbelt"],
@@ -472,7 +472,7 @@
     "key": "runaanshurricane",
     "name": "Runaan's Hurricane",
     "type": "Offensive",
-    "bonus": "Attacks hit additional enemies and deal 50% damage.",
+    "bonus": "Attacks hit 1 additional enemy. This extra hit does 25% damage and applies on-hit effects.",
     "tier": 1,
     "depth": 2,
     "buildsFrom": ["spatula", "negatroncloak"],
@@ -481,7 +481,7 @@
   },
   "seraphsembrace": {
     "key": "seraphsembrace",
-    "name": "Runaan's Hurricane",
+    "name": "Seraph's Embrace",
     "type": "Utility",
     "bonus": "Regain 20 mana each time a spell is cast",
     "tier": 1,
@@ -505,7 +505,7 @@
     "key": "statikkshiv",
     "name": "Statikk Shiv",
     "type": "Offensive",
-    "bonus": "Every 3rd attack deals 100 splash magical damage.",
+    "bonus": "Every 3rd attack deals 100 splash magical damage to 3 enemies.",
     "tier": 1,
     "depth": 2,
     "buildsFrom": ["recurvebow", "tearofthegoddess"],
@@ -538,7 +538,7 @@
     "key": "thornmail",
     "name": "Thornmail",
     "type": "Defensive",
-    "bonus": "Reflect 35% of damage taken from attacks.",
+    "bonus": "Reflect 100% of of physical damage mitigated as True Damage.",
     "tier": 1,
     "depth": 2,
     "buildsFrom": ["chainvest", "chainvest"],
@@ -560,7 +560,7 @@
     "key": "warmogsarmor",
     "name": "Warmog's Armor",
     "type": "Defensive",
-    "bonus": "Regenerate 3% max Health per second.",
+    "bonus": "Regenerate 6% max <strong style='color: #20995D;'>Health</strong> per second.",
     "tier": 1,
     "depth": 2,
     "buildsFrom": ["giantsbelt", "giantsbelt"],
@@ -593,7 +593,7 @@
     "key": "zekesherald",
     "name": "Zeke's Herald",
     "type": "Utility",
-    "bonus": "Adjacent allies gain +10% Attack Speed.",
+    "bonus": "On start of combat, allies 2 spaces to the left and right gain +15% Attack Speed.",
     "tier": 1,
     "depth": 2,
     "buildsFrom": ["bfsword", "giantsbelt"],

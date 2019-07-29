@@ -1,5 +1,6 @@
 {
   "Aatrox": {
+    "id": "266",
     "key": "Aatrox",
     "name": "Aatrox",
     "origin": ["Demon"],
@@ -9,9 +10,9 @@
       "name": "The Darkin Blade",
       "description": "Aatrox cleaves the area in front of him, dealing damage to enemies inside it.",
       "type": "Active",
-      "manaCost": 100,
+      "manaCost": 75,
       "manaStart": 0,
-      "stats": [{ "type": "Damage", "value": "350 / 575 / 850" }]
+      "stats": [{ "type": "Damage", "value": "400 / 700 / 1000" }]
     },
     "stats": {
       "offense": {
@@ -29,6 +30,7 @@
     "items": ["titanichydra", "phantomdancer", "dragonsclaw"]
   },
   "Ahri": {
+    "id": "103",
     "key": "Ahri",
     "name": "Ahri",
     "cost": 2,
@@ -40,7 +42,7 @@
       "type": "Active",
       "manaCost": 75,
       "manaStart": 0,
-      "stats": [{ "type": "Damage", "value": "100 / 175 / 250" }]
+      "stats": [{ "type": "Damage", "value": "100 / 200 / 300" }]
     },
     "stats": {
       "offense": {
@@ -58,6 +60,7 @@
     "items": ["spearofshojin", "guinsoosrageblade", "rabadonsdeathcap"]
   },
   "Akali": {
+    "id": "84",
     "key": "Akali",
     "name": "Akali",
     "cost": 4,
@@ -74,12 +77,12 @@
     "stats": {
       "offense": {
         "damage": 70,
-        "attackSpeed": 0.75,
+        "attackSpeed": 0.7,
         "dps": 53,
         "range": 1
       },
       "defense": {
-        "health": 700,
+        "health": 650,
         "armor": 20,
         "magicResist": 20
       }
@@ -87,6 +90,7 @@
     "items": ["spearofshojin", "hextechgunblade", "infinityedge"]
   },
   "Anivia": {
+    "id": "34",
     "key": "Anivia",
     "name": "Anivia",
     "origin": ["Glacial"],
@@ -99,7 +103,7 @@
       "manaCost": 100,
       "manaStart": 0,
       "stats": [
-        { "type": "Damage", "value": "300 / 600 / 900" },
+        { "type": "Damage", "value": "700 / 950 / 1200" },
         { "type": "Attack Speed Slow", "value": "50 / 70 / 90" },
         { "type": "Storm Duration", "value": "8s" }
       ]
@@ -109,7 +113,7 @@
         "damage": 40,
         "attackSpeed": 0.6,
         "dps": 24,
-        "range": 4
+        "range": 3
       },
       "defense": {
         "health": 650,
@@ -120,6 +124,7 @@
     "items": ["spearofshojin", "morellonomicon", "rabadonsdeathcap"]
   },
   "Ashe": {
+    "id": "22",
     "key": "Ashe",
     "name": "Ashe",
     "origin": ["Glacial"],
@@ -144,7 +149,7 @@
         "damage": 60,
         "attackSpeed": 0.7,
         "dps": 42,
-        "range": 5
+        "range": 4
       },
       "defense": {
         "health": 550,
@@ -155,6 +160,7 @@
     "items": ["spearofshojin", "guinsoosrageblade", "runaanshurricane"]
   },
   "AurelionSol": {
+    "id": "136",
     "key": "AurelionSol",
     "name": "Aurelion Sol",
     "origin": ["Dragon"],
@@ -187,13 +193,14 @@
     "items": ["spearofshojin", "guinsoosrageblade", "rabadonsdeathcap"]
   },
   "Blitzcrank": {
+    "id": "53",
     "key": "Blitzcrank",
     "name": "Blitzcrank",
     "origin": ["Robot"],
     "class": ["Brawler"],
     "cost": 2,
     "ability": {
-      "name": "Voice of Light",
+      "name": "Rocket Grab",
       "description": "Blitzcrank pulls the furthest enemy to him.",
       "type": "Active",
       "manaCost": 150,
@@ -219,6 +226,7 @@
     "items": ["thornmail", "warmogsarmor", "dragonsclaw"]
   },
   "Brand": {
+    "id": "63",
     "key": "Brand",
     "name": "Brand",
     "origin": ["Demon"],
@@ -228,7 +236,7 @@
       "name": "Pyroclasm",
       "description": "Brand launches a bouncing fireball, damaging enemies hit.",
       "type": "Active",
-      "manaCost": 100,
+      "manaCost": 125,
       "manaStart": 0,
       "stats": [
         { "type": "Damage", "value": "200 / 300 / 400" },
@@ -251,6 +259,7 @@
     "items": ["spearofshojin", "guinsoosrageblade", "rabadonsdeathcap"]
   },
   "Braum": {
+    "id": "201",
     "key": "Braum",
     "name": "Braum",
     "origin": ["Glacial"],
@@ -260,10 +269,10 @@
       "name": "Unbreakable",
       "description": "Braum creates a barrier that blocks all incoming damage.",
       "type": "Active",
-      "manaCost": 75,
+      "manaCost": 50,
       "manaStart": 0,
       "stats": [
-        { "type": "Damage Reduction", "value": "60 / 75 / 90" },
+        { "type": "Damage Reduction", "value": "70% / 80% / 90%" },
         { "type": "Duration", "value": "4s" }
       ]
     },
@@ -283,8 +292,9 @@
     "items": ["thornmail", "zekesherald", "dragonsclaw"]
   },
   "Chogath": {
+    "id": "31",
     "key": "Chogath",
-    "name": "Cho'gath",
+    "name": "Cho'Gath",
     "origin": ["Void"],
     "class": ["Brawler"],
     "cost": 4,
@@ -296,7 +306,7 @@
       "manaStart": 50,
       "stats": [
         { "type": "Damage", "value": "200 / 400 / 600" },
-        { "type": "Knockup Duration", "value": "2s / 2.25s / 2.5s" },
+        { "type": "Knockup Duration", "value": "1.5s / 2s / 2.5s" },
         { "type": "AoE Radius", "value": "3 hexes" },
         { "type": "Delay", "value": "1.5s" }
       ]
@@ -309,7 +319,7 @@
         "range": 1
       },
       "defense": {
-        "health": 1100,
+        "health": 1000,
         "armor": 20,
         "magicResist": 20
       }
@@ -317,6 +327,7 @@
     "items": ["thornmail", "warmogsarmor", "dragonsclaw"]
   },
   "Darius": {
+    "id": "122",
     "key": "Darius",
     "name": "Darius",
     "origin": ["Imperial"],
@@ -350,6 +361,7 @@
     "items": ["titanichydra", "warmogsarmor", "phantomdancer"]
   },
   "Draven": {
+    "id": "119",
     "key": "Draven",
     "name": "Draven",
     "origin": ["Imperial"],
@@ -369,7 +381,7 @@
     "stats": {
       "offense": {
         "damage": 75,
-        "attackSpeed": 0.65,
+        "attackSpeed": 0.75,
         "dps": 49,
         "range": 3
       },
@@ -378,23 +390,25 @@
         "armor": 25,
         "magicResist": 20
       }
-    }
+    },
+    "items": ["infinityedge", "rapidfirecannon", "phantomdancer"]
   },
   "Elise": {
+    "id": "60",
     "key": "Elise",
     "name": "Elise",
     "origin": ["Demon"],
     "class": ["Shapeshifter"],
-    "cost": 2,
+    "cost": 1,
     "ability": {
       "name": "Spider Form",
       "description": "Elise fires a cocoon stunning the nearest enemy and transforms, summoning 2 Spiderlings.",
       "type": "Active",
-      "manaCost": 75,
+      "manaCost": 100,
       "manaStart": 0,
       "stats": [
         { "type": "Life Steal", "value": "60% / 90% / 120%" },
-        { "type": "Number of Spiderlings", "value": "2 / 3 / 4" },
+        { "type": "Number of Spiderlings", "value": "1 / 2 / 4" },
         { "type": "Spiderling Health", "value": "500" }
       ]
     },
@@ -406,13 +420,15 @@
         "range": 2
       },
       "defense": {
-        "health": 500,
-        "armor": 25,
+        "health": 450,
+        "armor": 20,
         "magicResist": 20
       }
-    }
+    },
+    "items": ["warmogsarmor", "guinsoosrageblade", "phantomdancer"]
   },
   "Evelynn": {
+    "id": "28",
     "key": "Evelynn",
     "name": "Evelynn",
     "origin": ["Demon"],
@@ -426,14 +442,14 @@
       "manaStart": 0,
       "stats": [
         { "type": "Damage", "value": "200 / 250 / 300" },
-        { "type": "Crit Multiplier", "value": "3 / 4 / 5" },
-        { "type": "Crit Threshold", "value": "0.5" },
+        { "type": "Crit Multiplier", "value": "3x / 5x / 7x" },
+        { "type": "Crit Threshold", "value": "65% HP" },
         { "type": "Blink Distance", "value": "3" }
       ]
     },
     "stats": {
       "offense": {
-        "damage": 50,
+        "damage": 60,
         "attackSpeed": 0.6,
         "dps": 50,
         "range": 1
@@ -443,9 +459,11 @@
         "armor": 20,
         "magicResist": 20
       }
-    }
+    },
+    "items": ["rabadonsdeathcap", "morellonomicon"]
   },
   "Fiora": {
+    "id": "114",
     "key": "Fiora",
     "name": "Fiora",
     "origin": ["Noble"],
@@ -458,7 +476,7 @@
       "manaCost": 75,
       "manaStart": 0,
       "stats": [
-        { "type": "Damage", "value": "100 / 175 / 250" },
+        { "type": "Damage", "value": "100 / 250 / 400" },
         { "type": "Stun Duration", "value": "1.5s" },
         { "type": "Block Duration", "value": "1.5s" }
       ]
@@ -466,7 +484,7 @@
     "stats": {
       "offense": {
         "damage": 40,
-        "attackSpeed": 0.7,
+        "attackSpeed": 1,
         "dps": 28,
         "range": 1
       },
@@ -475,9 +493,11 @@
         "armor": 25,
         "magicResist": 20
       }
-    }
+    },
+    "items": ["frozenheart", "zekesherald", "phantomdancer"]
   },
   "Gangplank": {
+    "id": "41",
     "key": "Gangplank",
     "name": "Gangplank",
     "origin": ["Pirate"],
@@ -494,18 +514,20 @@
     "stats": {
       "offense": {
         "damage": 55,
-        "attackSpeed": 0.6,
+        "attackSpeed": 0.65,
         "dps": 33,
         "range": 1
       },
       "defense": {
-        "health": 600,
+        "health": 700,
         "armor": 20,
         "magicResist": 20
       }
-    }
+    },
+    "items": ["titanichydra", "morellonomicon"]
   },
   "Garen": {
+    "id": "86",
     "key": "Garen",
     "name": "Garen",
     "origin": ["Noble"],
@@ -536,9 +558,11 @@
         "armor": 35,
         "magicResist": 20
       }
-    }
+    },
+    "items": ["morellonomicon", "warmogsarmor", "phantomdancer"]
   },
   "Gnar": {
+    "id": "150",
     "key": "Gnar",
     "name": "Gnar",
     "origin": ["Wild", "Yordle"],
@@ -567,13 +591,15 @@
         "range": 2
       },
       "defense": {
-        "health": 850,
-        "armor": 35,
+        "health": 750,
+        "armor": 30,
         "magicResist": 20
       }
-    }
+    },
+    "items": ["frozenheart", "warmogsarmor", "phantomdancer"]
   },
   "Graves": {
+    "id": "104",
     "key": "Graves",
     "name": "Graves",
     "origin": ["Pirate"],
@@ -595,13 +621,15 @@
         "range": 1
       },
       "defense": {
-        "health": 500,
+        "health": 450,
         "armor": 20,
         "magicResist": 20
       }
-    }
+    },
+    "items": ["redbuff", "titanichydra", "warmogsarmor"]
   },
   "Karthus": {
+    "id": "30",
     "key": "Karthus",
     "name": "Karthus",
     "origin": ["Phantom"],
@@ -630,9 +658,11 @@
         "armor": 25,
         "magicResist": 20
       }
-    }
+    },
+    "items": ["morellonomicon", "rabadonsdeathcap", "seraphsembrace"]
   },
   "Kassadin": {
+    "id": "38",
     "key": "Kassadin",
     "name": "Kassadin",
     "origin": ["Void"],
@@ -661,9 +691,11 @@
         "armor": 25,
         "magicResist": 20
       }
-    }
+    },
+    "items": ["guinsoosrageblade", "phantomdancer", "dragonsclaw"]
   },
   "Katarina": {
+    "id": "55",
     "key": "Katarina",
     "name": "Katarina",
     "origin": ["Imperial"],
@@ -694,9 +726,11 @@
         "armor": 20,
         "magicResist": 20
       }
-    }
+    },
+    "items": ["morellonomicon", "rabadonsdeathcap", "seraphsembrace"]
   },
   "Kayle": {
+    "id": "10",
     "key": "Kayle",
     "name": "Kayle",
     "origin": ["Noble"],
@@ -726,9 +760,11 @@
         "armor": 35,
         "magicResist": 20
       }
-    }
+    },
+    "items": ["spearofshojin", "guinsoosrageblade", "seraphsembrace"]
   },
   "Kennen": {
+    "id": "85",
     "key": "Kennen",
     "name": "Kennen",
     "origin": ["Ninja", "Yordle"],
@@ -741,14 +777,13 @@
       "manaCost": 150,
       "manaStart": 50,
       "stats": [
-        { "type": "Damage", "value": "300 / 480 / 660" },
-        { "type": "Damage per Tick", "value": "50 / 80 / 110" },
+        { "type": "Damage", "value": "400 / 650 / 900" },
         { "type": "Stun Duration", "value": "1.5s" }
       ]
     },
     "stats": {
       "offense": {
-        "damage": 70,
+        "damage": 65,
         "attackSpeed": 0.65,
         "dps": 36,
         "range": 2
@@ -758,9 +793,11 @@
         "armor": 20,
         "magicResist": 20
       }
-    }
+    },
+    "items": ["morellonomicon", "rabadonsdeathcap", "seraphsembrace"]
   },
   "Khazix": {
+    "id": "121",
     "key": "Khazix",
     "name": "Kha'Zix",
     "origin": ["Void"],
@@ -789,9 +826,11 @@
         "armor": 20,
         "magicResist": 20
       }
-    }
+    },
+    "items": ["spearofshojin", "infinityedge", "phantomdancer"]
   },
   "Kindred": {
+    "id": "203",
     "key": "Kindred",
     "name": "Kindred",
     "origin": ["Phantom"],
@@ -820,9 +859,11 @@
         "armor": 20,
         "magicResist": 20
       }
-    }
+    },
+    "items": ["guinsoosrageblade", "infinityedge"]
   },
   "Leona": {
+    "id": "89",
     "key": "Leona",
     "name": "Leona",
     "origin": ["Noble"],
@@ -832,7 +873,7 @@
       "name": "Solar Flare",
       "description": "Leona calls down a solar ray, stunning enemies in the center and dealing damage to enemies inside it.",
       "type": "Active",
-      "manaCost": 150,
+      "manaCost": 100,
       "manaStart": 50,
       "stats": [
         { "type": "Damage", "value": "175 / 250 / 325" },
@@ -852,9 +893,11 @@
         "armor": 55,
         "magicResist": 20
       }
-    }
+    },
+    "items": ["zekesherald", "frozenheart"]
   },
   "Lissandra": {
+    "id": "127",
     "key": "Lissandra",
     "name": "Lissandra",
     "origin": ["Glacial"],
@@ -886,9 +929,11 @@
         "armor": 20,
         "magicResist": 20
       }
-    }
+    },
+    "items": ["morellonomicon", "rabadonsdeathcap", "seraphsembrace"]
   },
   "Lucian": {
+    "id": "236",
     "key": "Lucian",
     "name": "Lucian",
     "origin": ["Noble"],
@@ -900,13 +945,7 @@
       "type": "Active",
       "manaCost": 35,
       "manaStart": 0,
-      "stats": [
-        { "type": "Damage Per Bullet", "value": "25 / 45 / 65" },
-        { "type": "Shots", "value": "20 / 25 / 30" },
-        { "type": "Duration", "value": "3s" },
-        { "type": "Recast Lockout", "value": "0.75" },
-        { "type": "% Damage to Minions", "value": "200" }
-      ]
+      "stats": [{ "type": "Second Shot Damage", "value": "150 / 250 / 350" }]
     },
     "stats": {
       "offense": {
@@ -920,9 +959,11 @@
         "armor": 25,
         "magicResist": 20
       }
-    }
+    },
+    "items": ["infinityedge", "spearofshojin", "rapidfirecannon"]
   },
   "Lulu": {
+    "id": "117",
     "key": "Lulu",
     "name": "Lulu",
     "origin": ["Yordle"],
@@ -953,9 +994,11 @@
         "armor": 25,
         "magicResist": 20
       }
-    }
+    },
+    "items": ["guinsoosrageblade", "rabadonsdeathcap", "spearofshojin"]
   },
   "MissFortune": {
+    "id": "21",
     "key": "MissFortune",
     "name": "Miss Fortune",
     "origin": ["Pirate"],
@@ -965,7 +1008,7 @@
       "name": "Bullet Time",
       "description": "Miss Fortune channels and fires several waves of bullets in a cone.",
       "type": "Active",
-      "manaCost": 75,
+      "manaCost": 100,
       "manaStart": 0,
       "stats": [
         { "type": "Channel Duration", "value": "3s" },
@@ -984,9 +1027,11 @@
         "armor": 20,
         "magicResist": 20
       }
-    }
+    },
+    "items": ["guinsoosrageblade", "rabadonsdeathcap", "morellonomicon"]
   },
   "Mordekaiser": {
+    "id": "82",
     "key": "Mordekaiser",
     "name": "Mordekaiser",
     "origin": ["Phantom"],
@@ -1012,13 +1057,15 @@
         "range": 1
       },
       "defense": {
-        "health": 500,
+        "health": 550,
         "armor": 35,
         "magicResist": 20
       }
-    }
+    },
+    "items": ["frozenheart", "phantomdancer", "dragonsclaw"]
   },
   "Morgana": {
+    "id": "25",
     "key": "Morgana",
     "name": "Morgana",
     "origin": ["Demon"],
@@ -1031,10 +1078,9 @@
       "manaCost": 150,
       "manaStart": 50,
       "stats": [
-        { "type": "Damage", "value": "250 / 350 / 450" },
+        { "type": "Damage", "value": "300 / 375 / 450" },
         { "type": "Chain Duration", "value": "3s" },
-        { "type": "Stun Duration", "value": "2s / 4s / 6s" },
-        { "type": "Range", "value": "3" }
+        { "type": "Stun Duration", "value": "2s / 4s / 6s" }
       ]
     },
     "stats": {
@@ -1049,9 +1095,11 @@
         "armor": 20,
         "magicResist": 20
       }
-    }
+    },
+    "items": ["morellonomicon", "rabadonsdeathcap", "seraphsembrace"]
   },
   "Nidalee": {
+    "id": "76",
     "key": "Nidalee",
     "name": "Nidalee",
     "origin": ["Wild"],
@@ -1081,9 +1129,11 @@
         "armor": 20,
         "magicResist": 20
       }
-    }
+    },
+    "items": ["rapidfirecannon", "bloodthirster", "guinsoosrageblade"]
   },
   "Poppy": {
+    "id": "78",
     "key": "Poppy",
     "name": "Poppy",
     "origin": ["Yordle"],
@@ -1096,10 +1146,10 @@
       "manaCost": 75,
       "manaStart": 0,
       "stats": [
-        { "type": "Damage", "value": "300 / 400 / 500" },
-        { "type": "Knockback Duration", "value": "1s" },
-        { "type": "Stun Duration", "value": "1.5s / 2.5s / 3.5s" },
-        { "type": "Delay", "value": "0.75s" }
+        { "type": "Damage", "value": "300 / 500 / 700" },
+        { "type": "Knockup Duration", "value": "1s" },
+        { "type": "Stun Duration", "value": "2s / 3s / 4s" },
+        { "type": "Number of Targets Hit", "value": "1 / 2 / 3" }
       ]
     },
     "stats": {
@@ -1111,23 +1161,25 @@
       },
       "defense": {
         "health": 800,
-        "armor": 30,
+        "armor": 40,
         "magicResist": 20
       }
-    }
+    },
+    "items": ["frozenheart", "phantomdancer", "dragonsclaw"]
   },
   "Pyke": {
+    "id": "555",
     "key": "Pyke",
     "name": "Pyke",
     "origin": ["Pirate"],
     "class": ["Assassin"],
     "cost": 2,
     "ability": {
-      "name": "Burrow",
+      "name": "Phantom Undertow",
       "description": "Pyke dashes behind the furthest enemy, creating an afterimage that stuns enemies it passes through.",
       "type": "Active",
-      "manaCost": 100,
-      "manaStart": 50,
+      "manaCost": 125,
+      "manaStart": 75,
       "stats": [
         { "type": "Damage", "value": "150 / 200 / 250" },
         { "type": "Stun Duration", "value": "2s / 2.5s / 3s" },
@@ -1146,9 +1198,11 @@
         "armor": 25,
         "magicResist": 20
       }
-    }
+    },
+    "items": ["spearofshojin", "rabadonsdeathcap", "guinsoosrageblade"]
   },
   "RekSai": {
+    "id": "421",
     "key": "RekSai",
     "name": "Rek'Sai",
     "origin": ["Void"],
@@ -1161,11 +1215,10 @@
       "manaCost": 150,
       "manaStart": 0,
       "stats": [
-        { "type": "Damage", "value": "150 / 200 / 250" },
+        { "type": "Damage", "value": "150 / 250 / 350" },
         { "type": "Heal Amount", "value": "300 / 400 / 500" },
-        { "type": "Heal Tick Rate", "value": "0.5s" },
-        { "type": "Burrow Duration", "value": "2s" },
-        { "type": "Knockup Duration", "value": "1s" }
+        { "type": "Burrow Duration", "value": "1s" },
+        { "type": "Knockup Duration", "value": "1.75s" }
       ]
     },
     "stats": {
@@ -1180,9 +1233,11 @@
         "armor": 20,
         "magicResist": 20
       }
-    }
+    },
+    "items": ["frozenheart", "phantomdancer", "dragonsclaw"]
   },
   "Rengar": {
+    "id": "107",
     "key": "Rengar",
     "name": "Rengar",
     "origin": ["Wild"],
@@ -1203,7 +1258,7 @@
     },
     "stats": {
       "offense": {
-        "damage": 55,
+        "damage": 65,
         "attackSpeed": 0.55,
         "dps": 30,
         "range": 1
@@ -1213,9 +1268,11 @@
         "armor": 20,
         "magicResist": 20
       }
-    }
+    },
+    "items": ["infinityedge", "guinsoosrageblade", "rapidfirecannon"]
   },
   "Sejuani": {
+    "id": "113",
     "key": "Sejuani",
     "name": "Sejuani",
     "origin": ["Glacial"],
@@ -1229,7 +1286,7 @@
       "manaStart": 50,
       "stats": [
         { "type": "Damage", "value": "100 / 175 / 250" },
-        { "type": "Stun Duration", "value": "3s / 4s / 5s" }
+        { "type": "Stun Duration", "value": "2s / 3.5s / 5s" }
       ]
     },
     "stats": {
@@ -1244,9 +1301,11 @@
         "armor": 35,
         "magicResist": 25
       }
-    }
+    },
+    "items": ["frozenheart", "phantomdancer", "dragonsclaw"]
   },
   "Shen": {
+    "id": "98",
     "key": "Shen",
     "name": "Shen",
     "origin": ["Ninja"],
@@ -1257,7 +1316,7 @@
       "description": "Shen creates a zone around himself, allowing allies to dodge all attacks.",
       "type": "Active",
       "manaCost": 150,
-      "manaStart": 50,
+      "manaStart": 100,
       "stats": [{ "type": "Zone Duration", "value": "3s / 4s / 5s" }]
     },
     "stats": {
@@ -1272,9 +1331,11 @@
         "armor": 30,
         "magicResist": 20
       }
-    }
+    },
+    "items": ["thornmail", "phantomdancer", "dragonsclaw"]
   },
   "Shyvana": {
+    "id": "102",
     "key": "Shyvana",
     "name": "Shyvana",
     "origin": ["Dragon"],
@@ -1287,26 +1348,27 @@
       "manaCost": 100,
       "manaStart": 0,
       "stats": [
-        { "type": "Transform Damage", "value": "50 / 90 / 130" },
-        { "type": "Burn Damage", "value": "200 / 300 / 400" },
-        { "type": "Burn Duration", "value": "3s" }
+        { "type": "Bonus Attack Damage", "value": "100 / 150 / 200" },
+        { "type": "Burn Damage", "value": "200 / 300 / 400" }
       ]
     },
     "stats": {
       "offense": {
         "damage": 50,
-        "attackSpeed": 0.65,
+        "attackSpeed": 0.7,
         "dps": 33,
         "range": 4
       },
       "defense": {
-        "health": 550,
+        "health": 650,
         "armor": 20,
         "magicResist": 20
       }
-    }
+    },
+    "items": ["frozenheart", "phantomdancer", "warmogsarmor"]
   },
   "Swain": {
+    "id": "50",
     "key": "Swain",
     "name": "Swain",
     "origin": ["Imperial", "Demon"],
@@ -1337,9 +1399,11 @@
         "armor": 25,
         "magicResist": 20
       }
-    }
+    },
+    "items": ["morellonomicon", "phantomdancer", "dragonsclaw"]
   },
   "Tristana": {
+    "id": "18",
     "key": "Tristana",
     "name": "Tristana",
     "origin": ["Yordle"],
@@ -1359,7 +1423,7 @@
     "stats": {
       "offense": {
         "damage": 50,
-        "attackSpeed": 0.7,
+        "attackSpeed": 0.65,
         "dps": 35,
         "range": 4
       },
@@ -1368,9 +1432,45 @@
         "armor": 20,
         "magicResist": 20
       }
-    }
+    },
+    "items": ["titanichydra", "cursedblade", "redbuff"]
+  },
+  "TwistedFate": {
+    "id": "4",
+    "key": "TwistedFate",
+    "name": "Twisted Fate",
+    "origin": ["Pirate"],
+    "class": ["Sorcerer"],
+    "cost": 2,
+    "ability": {
+      "name": "Pick a Card",
+      "description": "Twisted Fate throws a card that either stuns, deals damage around his target, or restores mana to himself and nearby allies.",
+      "type": "Active",
+      "manaCost": 50,
+      "manaStart": 0,
+      "stats": [
+        { "type": "Red Card AoE Damage", "value": "100 / 150 / 200" },
+        { "type": "Yellow Card Stun Duration", "value": "2s / 3s / 4s" },
+        { "type": "Blue Card Mana Restore", "value": "20 / 35 / 50" }
+      ]
+    },
+    "stats": {
+      "offense": {
+        "damage": 40,
+        "attackSpeed": 0.7,
+        "dps": 28,
+        "range": 3
+      },
+      "defense": {
+        "health": 450,
+        "armor": 20,
+        "magicResist": 20
+      }
+    },
+    "items": ["seraphsembrace", "ludensecho", "guinsoosrageblade"]
   },
   "Varus": {
+    "id": "110",
     "key": "Varus",
     "name": "Varus",
     "origin": ["Demon"],
@@ -1399,9 +1499,11 @@
         "armor": 25,
         "magicResist": 20
       }
-    }
+    },
+    "items": ["spearofshojin", "rabadonsdeathcap", "guinsoosrageblade"]
   },
   "Vayne": {
+    "id": "67",
     "key": "Vayne",
     "name": "Vayne",
     "origin": ["Noble"],
@@ -1418,7 +1520,7 @@
     "stats": {
       "offense": {
         "damage": 45,
-        "attackSpeed": 0.6,
+        "attackSpeed": 0.65,
         "dps": 27,
         "range": 3
       },
@@ -1427,9 +1529,11 @@
         "armor": 25,
         "magicResist": 20
       }
-    }
+    },
+    "items": ["rapidfirecannon", "runaanshurricane", "guinsoosrageblade"]
   },
   "Veigar": {
+    "id": "45",
     "key": "Veigar",
     "name": "Veigar",
     "origin": ["Yordle"],
@@ -1439,7 +1543,7 @@
       "name": "Primordial Burst",
       "description": "Veigar blasts an enemy with magical energy. This spell instantly kills if the enemy is a lower star level than Veigar.",
       "type": "Active",
-      "manaCost": 85,
+      "manaCost": 75,
       "manaStart": 0,
       "stats": [{ "type": "Damage", "value": "300 / 500 / 700" }]
     },
@@ -1455,9 +1559,11 @@
         "armor": 20,
         "magicResist": 20
       }
-    }
+    },
+    "items": ["spearofshojin", "rabadonsdeathcap", "guinsoosrageblade"]
   },
   "Volibear": {
+    "id": "106",
     "key": "Volibear",
     "name": "Volibear",
     "origin": ["Glacial"],
@@ -1467,12 +1573,11 @@
       "name": "Thunder Claws",
       "description": "Volibear's attacks bounce between enemies.",
       "type": "Passive",
-      "manaCost": 100,
+      "manaCost": 75,
       "manaStart": 0,
       "stats": [
         { "type": "Chain Damage Multiplier", "value": "80% / 90% / 100%" },
-        { "type": "Bounces", "value": "3 / 4 / 5" },
-        { "type": "Buff Duration", "value": "20s" }
+        { "type": "Bounces", "value": "3 / 4 / 5" }
       ]
     },
     "stats": {
@@ -1483,13 +1588,15 @@
         "range": 1
       },
       "defense": {
-        "health": 650,
-        "armor": 35,
+        "health": 700,
+        "armor": 30,
         "magicResist": 20
       }
-    }
+    },
+    "items": ["titanichydra", "cursedblade", "rapidfirecannon"]
   },
   "Warwick": {
+    "id": "19",
     "key": "Warwick",
     "name": "Warwick",
     "origin": ["Wild"],
@@ -1519,9 +1626,11 @@
         "armor": 30,
         "magicResist": 20
       }
-    }
+    },
+    "items": ["titanichydra", "warmogsarmor", "phantomdancer"]
   },
   "Yasuo": {
+    "id": "157",
     "key": "Yasuo",
     "name": "Yasuo",
     "origin": ["Exile"],
@@ -1534,10 +1643,10 @@
       "manaCost": 25,
       "manaStart": 0,
       "stats": [
-        { "type": "Damage", "value": "150 / 250 / 350" },
+        { "type": "Damage", "value": "150 / 350 / 550" },
         { "type": "Range", "value": "2" },
         { "type": "Empowered Range", "value": "4 hexes" },
-        { "type": "Knockup Duration", "value": "1.25s" }
+        { "type": "Knockup Duration", "value": "1.55s" }
       ]
     },
     "stats": {
@@ -1552,9 +1661,11 @@
         "armor": 35,
         "magicResist": 20
       }
-    }
+    },
+    "items": ["titanichydra", "warmogsarmor", "phantomdancer"]
   },
   "Zed": {
+    "id": "238",
     "key": "Zed",
     "name": "Zed",
     "origin": ["Ninja"],
@@ -1583,6 +1694,7 @@
         "armor": 25,
         "magicResist": 20
       }
-    }
+    },
+    "items": ["infinityedge", "bloodthirster", "rapidfirecannon"]
   }
 }

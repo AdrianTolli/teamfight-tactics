@@ -1,0 +1,13 @@
+.teamAndSynergies {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.myTeam {
+  flex: 2;
+}
+
+.mySynergies {
+  flex: 3;
+}
