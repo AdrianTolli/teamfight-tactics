@@ -33,7 +33,7 @@ class ChampSelect extends Component {
             src={this.props.originData[i].accentChampionImage}
             alt=""
           />
-          <div className="text">{this.props.originData[i].name}</div>
+          <span className="text">{this.props.originData[i].name}</span>
         </div>
       );
     }
@@ -60,7 +60,7 @@ class ChampSelect extends Component {
             src={this.props.classData[i].accentChampionImage}
             alt=""
           />
-          <div className="text">{this.props.classData[i].name}</div>
+          <span className="text">{this.props.classData[i].name}</span>
         </div>
       );
     }
@@ -82,8 +82,8 @@ class ChampSelect extends Component {
       );
     }
     return (
-      <div>
-        <h1>{this.props.selectedOrigin}</h1>
+      <div className="innerShownChamps">
+        <span className="title">{this.props.selectedOrigin}</span>
         {champObject}
       </div>
     );
@@ -99,8 +99,8 @@ class ChampSelect extends Component {
       );
     }
     return (
-      <div>
-        <h1>{this.props.selectedClass}</h1> {champObject}
+      <div className="innerShownChamps">
+        <span className="title">{this.props.selectedClass}</span> {champObject}
       </div>
     );
   }
@@ -108,13 +108,15 @@ class ChampSelect extends Component {
   render() {
     return (
       <div>
-        <div>
+        <div className="selectionContainer">
           {this.renderOriginSelect()}
           {this.renderClassSelect()}
         </div>
         <div className="championSelect">
-          <div>{this.renderChampsWithOriginShown()}</div>
-          <div>{this.renderChampsWithClassShown()}</div>
+          <div className="shownChamps">
+            {this.renderChampsWithOriginShown()}
+          </div>
+          <div className="shownChamps">{this.renderChampsWithClassShown()}</div>
         </div>
       </div>
     );

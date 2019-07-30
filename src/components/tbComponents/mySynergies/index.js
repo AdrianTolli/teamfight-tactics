@@ -18,8 +18,11 @@ class MySynergies extends Component {
           {Object.keys(this.props.mySynergies).map(key => {
             if (this.props.mySynergies[key].hasBonus) {
               return (
-                <div>
-                  {key}: {this.props.mySynergies[key].synergy.effect}{" "}
+                <div className="effect">
+                  <div className="effectTitle">{key}:</div>
+                  <div className="effectDescription">
+                    {this.props.mySynergies[key].synergy.effect}
+                  </div>
                 </div>
               );
             }

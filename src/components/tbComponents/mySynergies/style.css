@@ -10,4 +10,19 @@
 
 .synergyBonuses {
   flex: 3;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 600px;
+}
+
+.effect {
+  width: 250px;
+  padding: 6px;
+}
+.effectTitle {
+  font-size: 24px;
+  font-weight: 400;
+}
+.effectDescription {
 }

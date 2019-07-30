@@ -19,7 +19,7 @@ class MyTeam extends Component {
     return this.props.myChamps.map(champion => {
       let info = this.props.champData.find(data => data.name === champion);
       return (
-        <div>
+        <div className="myTeamChamp">
           <img
             src={imgURL + info.key + ".png"}
             className="champSprite"
@@ -101,8 +101,11 @@ class MyTeam extends Component {
 
   render() {
     return (
-      <div>
-        <h1>My team:</h1>
+      <div className="teamContainer">
+        <div className="titleDiv">
+          <span className="myTeamTitle">My team</span>
+        </div>
+
         <div className="teamAndSynergies">
           <div className="myTeam">{this.renderMyTeam()}</div>
           <div className="mySynergies">{this.renderMySynergies()}</div>

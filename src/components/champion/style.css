@@ -2,7 +2,8 @@
 }
 
 .championCard {
-  height: 36px;
+  height: 48px;
+  width: 1000px;
   margin-bottom: 6px;
   padding: 6px;
   display: flex;

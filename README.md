@@ -12,3 +12,11 @@ This webapp is an assistant to tft players, where it shows a list of all champio
    - `npm init`
 3. You should be all set, now start dev with npm start
    - `npm start`
+
+### TODO
+
+1. Teambuilder
+   - Add function to remove champion from team
+   - Display count for active synergies only
+   - Save team, so user can toggle between team and items/champions
+   - Styling

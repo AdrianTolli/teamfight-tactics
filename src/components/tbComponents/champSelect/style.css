@@ -1,17 +1,19 @@
 .imgDiv {
   padding: 6px;
+  height: 110px;
+  width: 100px;
 }
 
 .image {
   opacity: 1;
-  width: 64px;
-  height: 64px;
+  width: 72px;
+  height: 72px;
   transition: 0.5s ease;
   backface-visibility: hidden;
 }
 .text {
   transition: 0.5s ease;
-  opacity: 0;
+  opacity: 1;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   color: white;
@@ -25,15 +27,19 @@
 .imgDiv:hover .image {
   opacity: 0.3;
 }
-
+/* 
 .imgDiv:hover .text {
   opacity: 1;
-}
+} */
 
 .originContainer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+.selectionContainer {
+  background-color: rgba(1, 1, 26, 0.5);
 }
 
 .selection {
@@ -46,4 +52,21 @@
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
+}
+
+.shownChamps {
+  align-content: center;
+  width: 400px;
+}
+
+.innerShownChamps {
+  padding: 6px;
+  width: fit-content;
+  background-color: rgba(1, 1, 26, 0.5);
+  border-radius: 0 0 30px 30px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 500;
 }

@@ -1,13 +1,37 @@
+.teamContainer {
+}
+
 .teamAndSynergies {
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
+  background-color: rgba(1, 1, 26, 0.5);
 }
 
 .myTeam {
   flex: 2;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .mySynergies {
   flex: 3;
+}
+
+.champSprite {
+  height: 48px;
+  width: 48px;
+}
+.titleDiv {
+  text-align: center;
+}
+.myTeamTitle {
+  font-size: 48px;
+}
+
+.myTeamChamp {
+  margin: 6px;
+  display: flex;
 }

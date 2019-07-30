@@ -10,7 +10,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      displayedContent: null,
+      displayedContent: "champions",
       championData: null,
       itemData: null,
       originData: null,
@@ -223,15 +223,22 @@ class App extends Component {
           displayedContent={this.state.displayedContent}
         />
         {this.state.displayedContent === "champions" ? (
-          <div className="displayChampContainer">
-            <ContentHeader
-              sortByName={this.sortByName}
-              sortByCost={this.sortByCost}
-              sortByHealth={this.sortByHealth}
-              sortByClass={this.sortByClass}
-              sortByOrigin={this.sortByOrigin}
-            />
-            {this.renderChampions()}
+          <div className="flexIt">
+            <div className="displayChampContainer">
+              <ContentHeader
+                sortByName={this.sortByName}
+                sortByCost={this.sortByCost}
+                sortByHealth={this.sortByHealth}
+                sortByClass={this.sortByClass}
+                sortByOrigin={this.sortByOrigin}
+              />
+              {this.renderChampions()}
+            </div>
+            <span className="infoSpan">
+              The way the champs are sorted here, well be how they are sorted in
+              the teambuilder! I recommend sorting by cost, then they will be
+              lowest cost first in teambuilder :)
+            </span>
           </div>
         ) : this.state.displayedContent === "items" ? (
           <div className="displayItemContainer">{this.renderItems()}</div>

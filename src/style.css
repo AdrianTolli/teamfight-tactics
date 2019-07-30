@@ -10,7 +10,7 @@
 
 .displayChampContainer {
   height: fit-content;
-  width: 60%;
+  width: fit-content;
   margin: 12px;
   padding: 12px;
   display: flex;
@@ -28,4 +28,11 @@
   flex-direction: column;
   background-color: rgba(1, 1, 26, 0.5);
   border-radius: 5px;
+}
+
+.flexIt {
+  display: flex;
+}
+.infoSpan {
+  width: 350px;
 }
