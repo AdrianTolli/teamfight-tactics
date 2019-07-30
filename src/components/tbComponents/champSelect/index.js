@@ -30,7 +30,9 @@ class ChampSelect extends Component {
           <img
             className="image"
             value={this.props.originData[i].key}
-            src={this.props.originData[i].accentChampionImage}
+            src={require("../../../images/" +
+              this.props.originData[i].key +
+              ".png")}
             alt=""
           />
           <span className="text">{this.props.originData[i].name}</span>
@@ -57,7 +59,9 @@ class ChampSelect extends Component {
           <img
             className="image"
             value={this.props.classData[i].key}
-            src={this.props.classData[i].accentChampionImage}
+            src={require("../../../images/" +
+              this.props.classData[i].key +
+              ".png")}
             alt=""
           />
           <span className="text">{this.props.classData[i].name}</span>
