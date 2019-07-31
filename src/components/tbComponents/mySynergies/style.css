@@ -25,4 +25,6 @@
   font-weight: 400;
 }
 .effectDescription {
+  display: flex;
+  flex-direction: column;
 }

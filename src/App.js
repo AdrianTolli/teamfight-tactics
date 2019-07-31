@@ -235,9 +235,9 @@ class App extends Component {
               {this.renderChampions()}
             </div>
             <span className="infoSpan">
-              The way the champs are sorted here, well be how they are sorted in
-              the teambuilder! I recommend sorting by cost, then they will be
-              lowest cost first in teambuilder :)
+              I recommend{" "}
+              <span className="highlightedText">sorting by cost</span>, before
+              entering the teambuilder!
             </span>
           </div>
         ) : this.state.displayedContent === "items" ? (

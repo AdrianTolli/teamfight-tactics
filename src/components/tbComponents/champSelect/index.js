@@ -41,7 +41,7 @@ class ChampSelect extends Component {
     }
     return (
       <div className="selection">
-        <h2>Origin</h2>
+        <span className="title">Origin</span>
         <div className="originContainer">{originArray}</div>
       </div>
     );
@@ -70,7 +70,8 @@ class ChampSelect extends Component {
     }
     return (
       <div className="selection">
-        <h2>Class</h2> <div className="originContainer">{classArray}</div>
+        <span className="title">Class</span>{" "}
+        <div className="originContainer">{classArray}</div>
       </div>
     );
   }
@@ -85,12 +86,7 @@ class ChampSelect extends Component {
         />
       );
     }
-    return (
-      <div className="innerShownChamps">
-        <span className="title">{this.props.selectedOrigin}</span>
-        {champObject}
-      </div>
-    );
+    return <div className="innerShownChamps">{champObject}</div>;
   }
   renderChampsWithClassShown() {
     var champObject = [];
@@ -102,25 +98,29 @@ class ChampSelect extends Component {
         />
       );
     }
-    return (
-      <div className="innerShownChamps">
-        <span className="title">{this.props.selectedClass}</span> {champObject}
-      </div>
-    );
+    return <div className="innerShownChamps">{champObject}</div>;
   }
 
   render() {
     return (
-      <div>
+      <div className="champSelectContainer">
         <div className="selectionContainer">
           {this.renderOriginSelect()}
-          {this.renderClassSelect()}
-        </div>
-        <div className="championSelect">
-          <div className="shownChamps">
-            {this.renderChampsWithOriginShown()}
+          <div className="championSelect">
+            <div className="shownChamps">
+              <span className="title">{this.props.selectedOrigin}</span>
+              {this.renderChampsWithOriginShown()}
+            </div>
           </div>
-          <div className="shownChamps">{this.renderChampsWithClassShown()}</div>
+        </div>
+        <div className="selectionContainer">
+          {this.renderClassSelect()}
+          <div className="championSelect">
+            <div className="shownChamps">
+              <span className="title">{this.props.selectedClass}</span>
+              {this.renderChampsWithClassShown()}
+            </div>
+          </div>
         </div>
       </div>
     );

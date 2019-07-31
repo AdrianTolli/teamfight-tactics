@@ -17,15 +17,17 @@ class MyTeam extends Component {
     const imgURL =
       "https://ddragon.leagueoflegends.com/cdn/9.12.1/img/champion/";
     return this.props.myChamps.map(champion => {
-      let info = this.props.champData.find(data => data.name === champion);
+      let info = this.props.champData.find(data => data.key === champion);
       return (
-        <div className="myTeamChamp">
+        <div
+          className="myTeamChamp"
+          onClick={() => this.props.removeChamp(info.key)}
+        >
           <img
             src={imgURL + info.key + ".png"}
             className="champSprite"
             alt=""
           />
-          <span>{info.name}</span>
         </div>
       );
     });
@@ -56,7 +58,7 @@ class MyTeam extends Component {
 
   renderMySynergies() {
     const mySynergiesObject = this.props.myChamps.reduce((prev, curr) => {
-      let info = this.props.champData.find(data => data.name === curr);
+      let info = this.props.champData.find(data => data.key === curr);
       for (let i = 0; i < info.origin.length; i++) {
         if (prev.hasOwnProperty(info.origin[i])) {
           prev[info.origin[i]] = this.checkSynergyEffect(
@@ -103,7 +105,7 @@ class MyTeam extends Component {
     return (
       <div className="teamContainer">
         <div className="titleDiv">
-          <span className="myTeamTitle">My team</span>
+          <span className="myTeamTitle">Your team</span>
         </div>
 
         <div className="teamAndSynergies">

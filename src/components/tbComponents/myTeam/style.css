@@ -1,37 +1,40 @@
+.champSprite {
+  height: 48px;
+  width: 48px;
+  clip-path: polygon(50% 0%, 96% 25%, 96% 75%, 50% 100%, 4% 75%, 4% 25%);
+}
+.titleDiv {
+  text-align: center;
+  width: fit-content;
+}
+
 .teamContainer {
 }
 
 .teamAndSynergies {
   display: flex;
-  justify-content: space-evenly;
   flex-direction: row;
   background-color: rgba(1, 1, 26, 0.5);
 }
 
-.myTeam {
-  flex: 2;
-  height: 250px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
-.mySynergies {
-  flex: 3;
-}
-
-.champSprite {
-  height: 48px;
-  width: 48px;
-}
-.titleDiv {
-  text-align: center;
-}
 .myTeamTitle {
   font-size: 48px;
 }
 
+.myTeam {
+  flex: 2;
+  height: 175px;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+
 .myTeamChamp {
   margin: 6px;
-  display: flex;
+  width: fit-content;
+}
+
+.mySynergies {
+  flex: 3;
 }

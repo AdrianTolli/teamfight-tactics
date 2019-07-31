@@ -16,6 +16,7 @@ class Teambuilder extends Component {
     };
 
     this.addChamp = this.addChamp.bind(this);
+    this.removeChamp = this.removeChamp.bind(this);
     this.changeClass = this.changeClass.bind(this);
     this.changeOrigin = this.changeOrigin.bind(this);
   }
@@ -28,7 +29,7 @@ class Teambuilder extends Component {
         );
         return !!origins;
       })
-      .map(champData => champData.name);
+      .map(champData => champData.key);
 
     this.setState({
       showedChampsWithOrigin: championsWithOrigin,
@@ -42,7 +43,7 @@ class Teambuilder extends Component {
         let classes = champData.class.find(champClass => champClass === classs);
         return !!classes;
       })
-      .map(champData => champData.name);
+      .map(champData => champData.key);
 
     this.setState({
       showedChampsWithClass: championsWithClass,
@@ -52,8 +53,23 @@ class Teambuilder extends Component {
 
   addChamp(value) {
     var newChamp = this.state.myChamps.slice(0);
-    newChamp.push(value);
-
+    if (newChamp.includes(value)) {
+      return null;
+    } else {
+      newChamp.push(value);
+      this.setState({
+        myChamps: newChamp
+      });
+    }
+  }
+  removeChamp(value) {
+    console.log("Removed clicked w/value: " + value);
+    var newChamp = this.state.myChamps.slice(0);
+    for (var i = 0; i < newChamp.length; i++) {
+      if (newChamp[i] === value) {
+        newChamp.splice(i, 1);
+      }
+    }
     this.setState({
       myChamps: newChamp
     });
@@ -79,6 +95,7 @@ class Teambuilder extends Component {
           champData={this.props.champData}
           originData={this.props.originData}
           classData={this.props.classData}
+          removeChamp={this.removeChamp}
         />
       </div>
     );

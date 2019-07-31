@@ -36,3 +36,10 @@
 .infoSpan {
   width: 350px;
 }
+
+.highlightedText {
+  font-weight: bolder;
+  background-color: rgba(13, 43, 70, 0.5);
+  color: rgb(6, 32, 54);
+  padding: 2px;
+}
