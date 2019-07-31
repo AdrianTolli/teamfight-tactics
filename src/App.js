@@ -236,8 +236,13 @@ class App extends Component {
             </div>
             <span className="infoSpan">
               I recommend{" "}
-              <span className="highlightedText">sorting by cost</span>, before
-              entering the teambuilder!
+              <span
+                onClick={this.sortByCost}
+                className="highlightedText pointer"
+              >
+                sorting by cost
+              </span>
+              , before entering the teambuilder!
             </span>
           </div>
         ) : this.state.displayedContent === "items" ? (
