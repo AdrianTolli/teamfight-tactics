@@ -44,6 +44,7 @@
 .selectionContainer {
   display: flex;
   flex-direction: row;
+  margin: 6px;
 }
 .championSelect {
   display: flex;

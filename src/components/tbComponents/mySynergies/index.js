@@ -13,7 +13,9 @@ class MySynergies extends Component {
                 <div className="effect">
                   <div className="effectTitle">{key}:</div>
                   <div className="effectDescription">
-                    {this.props.mySynergies[key].description}
+                    <div className="hoverText">
+                      {this.props.mySynergies[key].description}
+                    </div>
                     <div>
                       {this.props.mySynergies[key].count}:{" "}
                       {this.props.mySynergies[key].synergy.effect}

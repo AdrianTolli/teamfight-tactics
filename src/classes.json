@@ -67,7 +67,7 @@
     "bonuses": [
       {
         "needed": 2,
-        "effect": "At the start of combat, all Guardians and adjacent allies receive +30 armor. Stacks any number of times."
+        "effect": "At the start of combat, all adjacent allies receive +50 armor. Stacks any number of times."
       }
     ]
   },
@@ -90,20 +90,20 @@
   "knight": {
     "key": "knight",
     "name": "Knight",
-    "description": "Knights block damage from basic attacks.",
+    "description": "Your team ignores damage from all sources.",
     "accentChampionImage": "https://cdn.blitz.gg/blitz/centered/Kayle_Splash_Centered_0.jpg",
     "bonuses": [
       {
         "needed": 2,
-        "effect": "20 damage blocked."
+        "effect": "15 damage."
       },
       {
         "needed": 4,
-        "effect": "40 damage blocked."
+        "effect": "30 damage."
       },
       {
         "needed": 6,
-        "effect": "80 damage blocked."
+        "effect": "55 damage."
       }
     ]
   },

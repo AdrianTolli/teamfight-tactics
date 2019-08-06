@@ -104,11 +104,10 @@ class MyTeam extends Component {
   render() {
     return (
       <div className="teamContainer">
-        <div className="titleDiv">
-          <span className="myTeamTitle">Your team</span>
-        </div>
-
         <div className="teamAndSynergies">
+          <div className="titleDiv">
+            <span className="myTeamTitle">Your team</span>
+          </div>
           <div className="myTeam">{this.renderMyTeam()}</div>
           <div className="mySynergies">{this.renderMySynergies()}</div>
         </div>

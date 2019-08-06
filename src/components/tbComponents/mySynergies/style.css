@@ -17,6 +17,7 @@
 }
 
 .effect {
+  position: relative;
   width: 250px;
   padding: 6px;
 }
@@ -24,7 +25,23 @@
   font-size: 24px;
   font-weight: 400;
 }
+
 .effectDescription {
   display: flex;
   flex-direction: column;
+}
+
+.hoverText {
+  visibility: hidden;
+  position: absolute;
+  height: fit-content;
+  padding: 4px;
+  width: 100px;
+  top: 0;
+  right: -50%;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.effect:hover .hoverText {
+  visibility: visible;
 }

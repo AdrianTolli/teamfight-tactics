@@ -122,6 +122,7 @@ class ChampSelect extends Component {
             </div>
           </div>
         </div>
+        {this.props.myTeam}
       </div>
     );
   }

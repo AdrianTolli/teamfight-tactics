@@ -89,13 +89,15 @@ class Teambuilder extends Component {
           addChamp={this.addChamp}
           changeOrigin={this.changeOrigin}
           changeClass={this.changeClass}
-        />
-        <MyTeam
-          myChamps={this.state.myChamps}
-          champData={this.props.champData}
-          originData={this.props.originData}
-          classData={this.props.classData}
-          removeChamp={this.removeChamp}
+          myTeam={
+            <MyTeam
+              myChamps={this.state.myChamps}
+              champData={this.props.champData}
+              originData={this.props.originData}
+              classData={this.props.classData}
+              removeChamp={this.removeChamp}
+            />
+          }
         />
       </div>
     );
