@@ -4,66 +4,39 @@ import "./style.css";
 class Navbar extends Component {
   render() {
     return (
-      <div>
-        {this.props.displayedContent === "champions" ? (
-          <div className="navbar">
+      <div className="navbar">
+        <div className="navbarButtons">
+          <div className={`headerButton`} onClick={this.props.champClicked}>
             <span
-              className="headerButton highlighted"
-              onClick={this.props.champClicked}
+              className={`buttonSpan ${
+                this.props.displayedContent === "champions" ? "highlighted" : ""
+              }`}
             >
               Champions
             </span>
-            <span className="headerButton" onClick={this.props.itemClicked}>
-              Items
-            </span>
-            <span className="headerButton" onClick={this.props.tbClicked}>
-              Team builder
-            </span>
           </div>
-        ) : this.props.displayedContent === "items" ? (
-          <div className="navbar">
-            <span className="headerButton" onClick={this.props.champClicked}>
-              Champions
-            </span>
+          <div className={`headerButton`} onClick={this.props.itemClicked}>
             <span
-              className="headerButton highlighted"
-              onClick={this.props.itemClicked}
+              className={`buttonSpan ${
+                this.props.displayedContent === "items" ? "highlighted" : ""
+              }`}
             >
               Items
             </span>
-            <span className="headerButton" onClick={this.props.tbClicked}>
-              Team builder
-            </span>
           </div>
-        ) : this.props.displayedContent === "teambuilder" ? (
-          <div className="navbar">
-            <span className="headerButton" onClick={this.props.champClicked}>
-              Champions
-            </span>
-            <span className="headerButton" onClick={this.props.itemClicked}>
-              Items
-            </span>
 
+          <div className={`headerButton`} onClick={this.props.tbClicked}>
             <span
-              className="headerButton highlighted"
-              onClick={this.props.tbClicked}
+              className={`buttonSpan ${
+                this.props.displayedContent === "teambuilder"
+                  ? "highlighted"
+                  : ""
+              }`}
             >
               Team builder
             </span>
           </div>
-        ) : (
-          <div className="navbar">
-            <span className="headerButton" onClick={this.props.champClicked}>
-              Champions
-            </span>
-            <span className="headerButton" onClick={this.props.itemClicked}>
-              Items
-            </span>
-            <span className="headerButton" onClick={this.props.tbClicked}>
-              Team builder
-            </span>
-          </div>
-        )}
+        </div>
       </div>
     );
   }

@@ -33,7 +33,7 @@ class Champion extends Component {
             className="champSprite"
             alt=""
           />
-          {this.props.data.name}
+          <div>{this.props.data.name}</div>
         </div>
         <div className="classes">
           {this.renderClass()} <span>/</span> {this.props.data.origin}

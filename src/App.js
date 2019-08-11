@@ -102,6 +102,7 @@ class App extends Component {
     });
   }
   tbClicked() {
+    this.sortByCost(); /*For the champs to be 1 cost first*/
     this.setState({
       displayedContent: "teambuilder"
     });
@@ -223,7 +224,7 @@ class App extends Component {
           displayedContent={this.state.displayedContent}
         />
         {this.state.displayedContent === "champions" ? (
-          <div className="flexIt">
+          <div className="champContainer">
             <div className="displayChampContainer">
               <ContentHeader
                 sortByName={this.sortByName}
@@ -234,16 +235,6 @@ class App extends Component {
               />
               {this.renderChampions()}
             </div>
-            <span className="infoSpan">
-              I recommend{" "}
-              <span
-                onClick={this.sortByCost}
-                className="highlightedText pointer"
-              >
-                sorting by cost
-              </span>
-              , before entering the teambuilder!
-            </span>
           </div>
         ) : this.state.displayedContent === "items" ? (
           <div className="displayItemContainer">{this.renderItems()}</div>

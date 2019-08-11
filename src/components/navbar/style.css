@@ -1,17 +1,43 @@
 .navbar {
+  position: fixed;
+  top: 6px;
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
-  flex-direction: row;
-  padding: 6px;
+  justify-content: center;
+}
+
+.navbarButtons {
+  display: flex;
 }
 
 .headerButton {
-  padding: 10px;
-  background-color: #0d2b46;
-  color: white;
-  border-radius: 3px;
-  transition: 0.5s;
+  background-image: linear-gradient(to right, #006175 0%, #2f478a 100%);
+  border-radius: 12px;
+  box-sizing: border-box;
+  display: block;
+  height: 45px;
+  letter-spacing: 1px;
+  margin: 0 auto;
+  padding: 4px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 130px;
+  z-index: 2;
+  margin-left: 12px;
+}
+.headerButton:hover span {
+  background: transparent;
+}
+.buttonSpan {
+  align-items: center;
+  background: #2c2c2c;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  transition: background 0.5s ease;
+  width: 100%;
 }
 .headerButton:hover {
   cursor: pointer;
@@ -19,5 +45,5 @@
 }
 
 .highlighted {
-  background-color: #367086;
+  background: transparent;
 }

@@ -21,7 +21,7 @@
 .displayItemContainer {
   height: fit-content;
   width: 95%;
-  margin: 12px;
+  margin: 62px 12px 12px 12px;
   padding: 12px;
   display: flex;
   flex-direction: column;
@@ -29,8 +29,10 @@
   border-radius: 5px;
 }
 
-.flexIt {
+.champContainer {
   display: flex;
+  margin-top: 50px;
+  justify-content: center;
 }
 .infoSpan {
   width: 350px;

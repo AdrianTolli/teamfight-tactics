@@ -9,9 +9,12 @@
   display: flex;
   justify-content: space-between;
 }
-
+.championCard div {
+  align-self: center;
+}
 .name {
   flex: 1;
+  display: flex;
 }
 
 .classes {

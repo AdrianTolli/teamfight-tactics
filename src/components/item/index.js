@@ -68,12 +68,12 @@ class Item extends Component {
   render() {
     return (
       <div className="itemCard">
-        <div className="highlight">
+        <div className="itemHeader highlight">
           <img
             src={this.state.spriteURL + this.props.data.key + ".png"}
             alt=""
           />
-          {this.props.data.name}
+          <div>{this.props.data.name}</div>
         </div>
         {this.renderCombinations()}
       </div>
