@@ -36,7 +36,11 @@ class Item extends Component {
     var itemCombination = [];
     for (var i = 0; i < this.props.data.buildsInto.length; i++) {
       itemCombination.push(
-        <div className={`comboContainer ${i % 2 === 0 ? "" : "highlight"}`}>
+        <div
+          className={`comboContainer ${i % 2 === 0 ? "" : "highlight"} ${
+            i === this.props.data.buildsInto.length - 1 ? "rounded" : ""
+          }`}
+        >
           <img
             src={this.state.spriteURL + this.props.fullData[i].key + ".png"}
             alt=""

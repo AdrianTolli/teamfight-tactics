@@ -102,7 +102,12 @@ class App extends Component {
     });
   }
   tbClicked() {
-    this.sortByCost(); /*For the champs to be 1 cost first*/
+    if (
+      this.state.championData[1].cost != 1 ||
+      this.state.championData[0].cost != 1
+    ) {
+      this.sortByCost(); /*For the champs to be 1 cost first*/
+    }
     this.setState({
       displayedContent: "teambuilder"
     });

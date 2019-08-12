@@ -10,7 +10,6 @@
 .itemCard {
   width: 410px;
   height: 445px;
-  padding: 6px;
   margin: 12px 12px 0 0;
   display: flex;
   justify-content: space-between;
@@ -22,7 +21,7 @@
 .itemHeader {
   display: flex;
   padding: 3px;
-  width: 100%;
+  border-radius: 4px 4px 0 0;
 }
 .itemHeader img {
   height: 42px;
@@ -38,6 +37,9 @@
 
 .highlight {
   background-color: rgb(11, 26, 33);
+}
+.rounded {
+  border-radius: 0 0 4px 4px;
 }
 
 img {
