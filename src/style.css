@@ -8,14 +8,37 @@
 }
 
 .displayChampContainer {
-  height: fit-content;
+  position: relative;
+  height: 850px;
   width: fit-content;
-  margin: 12px;
-  padding: 12px;
+  margin-top: 12px;
   display: flex;
   flex-direction: column;
   background-color: rgba(1, 1, 26, 0.5);
   border-radius: 5px;
+  overflow-y: scroll;
+}
+.displayChampContainer::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+.displayChampContainer::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+}
+
+.displayChampContainer::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.24, #2f478a),
+    color-stop(0.52, #006175),
+    color-stop(0.86, #2f478a)
+  );
 }
 
 .displayItemContainer {
@@ -32,6 +55,7 @@
   display: flex;
   margin-top: 50px;
   justify-content: center;
+  height: fit-content;
 }
 .infoSpan {
   width: 350px;
